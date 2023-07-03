@@ -7,9 +7,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { HeaderComponent } from './header/header.component';
+
+import { AchievementsComponent } from './achievements/achievements.component';
 import { StoriesComponent } from './stories/stories.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
-import { HomeComponent } from './home/home.component';
+import { EventsComponent } from './events/events.component';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +21,11 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     HeroComponent,
     HeaderComponent,
+    AchievementsComponent,
     StoriesComponent,
     AlumniDirectoryComponent,
-    HomeComponent
+    EventsComponent
+
   ],
   imports: [
     BrowserModule,
