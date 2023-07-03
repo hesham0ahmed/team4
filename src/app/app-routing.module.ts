@@ -9,6 +9,8 @@ import { FormsOfMembershipComponent } from './forms-of-membership/forms-of-membe
 import { GetActiveComponent } from './get-active/get-active.component';
 import { MentoringComponent } from './mentoring/mentoring.component';
 import { BenefitsComponent } from './benefits/benefits.component';
+import { AboutComponent } from './about/about.component';
+import { CareerComponent } from './career/career.component';
 
 
 const routes: Routes = [
@@ -36,6 +38,10 @@ const routes: Routes = [
   },
   {
     path: "benefits", component: BenefitsComponent
+  }, {
+    path: "about", component: AboutComponent
+  }, {
+    path: "career", component: CareerComponent
   }
 
 
