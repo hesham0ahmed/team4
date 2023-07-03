@@ -6,12 +6,12 @@ export const alumnis = [
         achievements: '100%'
     }, {
         name: 'Mara Federmair',
-        photo: 'assets/alumni/photo.jpg',
+        photo: 'assets/alumni/woman.png',
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
-        name: 'Junufa Simonis',
-        photo: 'assets/alumni/photo.jpg',
+        name: 'Jenufa Simonis',
+        photo: 'assets/alumni/woman.png',
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
