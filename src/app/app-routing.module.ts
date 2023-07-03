@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 import { HomeComponent } from './home/home.component';
+import { MembershipFormComponent } from './membership-form/membership-form.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,9 @@ const routes: Routes = [
     path: "career", component: CareerComponent
   }, {
     path: "alumni-directory", component: AlumniDirectoryComponent
+  },
+  {
+    path: "membershipForm", component: MembershipFormComponent
   }
 
 ];
