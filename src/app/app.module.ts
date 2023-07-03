@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { HeaderComponent } from './header/header.component';
 import { StoriesComponent } from './stories/stories.component';
+import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StoriesComponent } from './stories/stories.component';
     FooterComponent,
     HeroComponent,
     HeaderComponent,
-    StoriesComponent
+    StoriesComponent,
+    AlumniDirectoryComponent
   ],
   imports: [
     BrowserModule,
