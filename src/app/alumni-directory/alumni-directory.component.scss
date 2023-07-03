@@ -2,7 +2,7 @@
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background: linear-gradient(to bottom, #87cefa, #1e90ff);
-    margin-bottom: 20px;
+    margin: 30px;
     /* Increase the margin bottom to create space between cards */
     /* Light blue to blue gradient */
 }
@@ -13,6 +13,7 @@
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
     /* Semi-transparent black background for modal overlay */
+    padding-bottom: 60px;
 }
 
 .modal-dialog {
