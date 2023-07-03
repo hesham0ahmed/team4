@@ -8,17 +8,30 @@
     text-align: center;
 }
 
-.title {
-    color : #58595b;
+.container > .img_hero {
+    text-align: center;
 }
 
-.content {
-    color: #403333;
+.container > .title {
+    color : #58595b;
+    margin: 20px;
+}
+
+.container > .content {
+    font-family: Gotham SSm\ 4r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
     margin:auto;
     max-width: 1000px;
 
     p {
         text-align: justify;
         margin: 10px;
+    }
+
+    .detail {
+        display: flex;
+        margin-top: 30px;
     }
 }
