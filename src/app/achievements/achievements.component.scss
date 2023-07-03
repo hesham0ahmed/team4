@@ -7,3 +7,18 @@
     margin:auto;
     text-align: center;
 }
+
+.title {
+    color : #58595b;
+}
+
+.content {
+    color: #403333;
+    margin:auto;
+    max-width: 1000px;
+
+    p {
+        text-align: justify;
+        margin: 10px;
+    }
+}

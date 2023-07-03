@@ -7,7 +7,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { HeaderComponent } from './header/header.component';
+
 import { AchievementsComponent } from './achievements/achievements.component';
+import { StoriesComponent } from './stories/stories.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { AchievementsComponent } from './achievements/achievements.component';
     FooterComponent,
     HeroComponent,
     HeaderComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    StoriesComponent
+
   ],
   imports: [
     BrowserModule,
