@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 
 import { AchievementsComponent } from './achievements/achievements.component';
 import { StoriesComponent } from './stories/stories.component';
+import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
+import { EventsComponent } from './events/events.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { StoriesComponent } from './stories/stories.component';
     HeroComponent,
     HeaderComponent,
     AchievementsComponent,
-    StoriesComponent
+    StoriesComponent,
+    AlumniDirectoryComponent,
+    EventsComponent
 
   ],
   imports: [
