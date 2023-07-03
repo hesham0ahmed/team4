@@ -20,7 +20,7 @@ export const alumnis = [
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
-        name: 'Emelin Bilajbeovic',
+        name: 'Emelin Bilajbegovic',
         photo: 'assets/alumni/photo.jpg',
         career: 'Full Stack Developer',
         achievements: '100%'
