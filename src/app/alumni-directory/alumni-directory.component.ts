@@ -23,4 +23,8 @@ export class AlumniDirectoryComponent implements OnInit {
     this.selectedAlumni = alumni;
   }
 
+  hideDetails() {
+    this.selectedAlumni = null;
+  }
+
 }
