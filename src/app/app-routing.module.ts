@@ -11,6 +11,7 @@ import { MentoringComponent } from './mentoring/mentoring.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
+import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 
 
 const routes: Routes = [
@@ -42,10 +43,9 @@ const routes: Routes = [
     path: "about", component: AboutComponent
   }, {
     path: "career", component: CareerComponent
+  }, {
+    path: "alumni-directory", component: AlumniDirectoryComponent
   }
-
-
-
 
 ];
 
