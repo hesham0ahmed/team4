@@ -12,6 +12,11 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { StoriesComponent } from './stories/stories.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 import { EventsComponent } from './events/events.component';
+import { MembershipComponent } from './membership/membership.component';
+import { BenefitsComponent } from './benefits/benefits.component';
+import { FormsOfMembershipComponent } from './forms-of-membership/forms-of-membership.component';
+import { GetActiveComponent } from './get-active/get-active.component';
+import { MentoringComponent } from './mentoring/mentoring.component';
 
 
 @NgModule({
@@ -24,7 +29,12 @@ import { EventsComponent } from './events/events.component';
     AchievementsComponent,
     StoriesComponent,
     AlumniDirectoryComponent,
-    EventsComponent
+    EventsComponent,
+    MembershipComponent,
+    BenefitsComponent,
+    FormsOfMembershipComponent,
+    GetActiveComponent,
+    MentoringComponent
 
   ],
   imports: [
