@@ -1,5 +1,9 @@
 #intro-example {
-  height: 52vh;
+  height: 25vh;
   // background-repeat: repeat;
-  background-size: contain;
+  background-size: 100%;
+}
+
+.navbar {
+  position: static;
 }
