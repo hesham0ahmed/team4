@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { alumnis } from '../alumnis';
+import { Ialumnis } from '../Ialumnis';
 
 @Component({
   selector: 'app-alumni-directory',
