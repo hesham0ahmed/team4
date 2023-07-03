@@ -11,10 +11,16 @@ import { AlumniService } from '../alumni.service';
 
 export class AlumniDirectoryComponent implements OnInit {
   alumniData: Ialumnis[] = [];
+  selectedAlumni: Ialumnis | null = null;
 
   constructor(private alumniService: AlumniService) { }
 
   ngOnInit() {
     this.alumniData = this.alumniService.getAlumniData();
   }
+
+  showDetails(alumni: Ialumnis) {
+    this.selectedAlumni = alumni;
+  }
+
 }
