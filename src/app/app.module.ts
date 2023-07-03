@@ -17,6 +17,7 @@ import { BenefitsComponent } from './benefits/benefits.component';
 import { FormsOfMembershipComponent } from './forms-of-membership/forms-of-membership.component';
 import { GetActiveComponent } from './get-active/get-active.component';
 import { MentoringComponent } from './mentoring/mentoring.component';
+import { MembershipFormComponent } from './membership-form/membership-form.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { MentoringComponent } from './mentoring/mentoring.component';
     BenefitsComponent,
     FormsOfMembershipComponent,
     GetActiveComponent,
-    MentoringComponent
+    MentoringComponent,
+    MembershipFormComponent
 
   ],
   imports: [

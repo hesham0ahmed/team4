@@ -11,12 +11,15 @@ import { MentoringComponent } from './mentoring/mentoring.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
+import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
+import { HomeComponent } from './home/home.component';
+import { MembershipFormComponent } from './membership-form/membership-form.component';
 
 
 const routes: Routes = [
 
   {
-    path: '', component: HeroComponent
+    path: '', component: HomeComponent
   },
   {
     path: "achievements", component: AchievementsComponent
@@ -42,10 +45,12 @@ const routes: Routes = [
     path: "about", component: AboutComponent
   }, {
     path: "career", component: CareerComponent
+  }, {
+    path: "alumni-directory", component: AlumniDirectoryComponent
+  },
+  {
+    path: "membershipForm", component: MembershipFormComponent
   }
-
-
-
 
 ];
 

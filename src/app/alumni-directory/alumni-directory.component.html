@@ -1,8 +1,31 @@
-<p>alumni-directory works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let alumni of alumniData">
+            <div class="card mb-6">
+                <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
+                <div class="card-body">
+                    <h3 class="card-title">{{ alumni.name }}</h3>
+                    <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<div *ngFor="let alumni of alumniData">
-    <h3>{{ alumni.name }}</h3>
-    <img [src]="alumni.photo" alt="Alumni Photo">
-    <p>Career: {{ alumni.career }}</p>
-    <p>Achievements: {{ alumni.achievements }}</p>
+<div class="modal" *ngIf="selectedAlumni">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">{{ selectedAlumni.name }}</h3>
+                <button type="button" class="close" (click)="selectedAlumni = null">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img [src]="selectedAlumni.photo" class="img-fluid" alt="Alumni Photo">
+                <p>Career: {{ selectedAlumni.career }}</p>
+                <p>Achievements: {{ selectedAlumni.achievements }}</p>
+            </div>
+        </div>
+    </div>
 </div>

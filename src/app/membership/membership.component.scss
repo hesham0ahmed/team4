@@ -1,13 +1,19 @@
 .sectionMembership {
-    height: 250px;
+    height: 300px;
     padding-top: 20px;
     margin-bottom: 10px;
+    padding-left: 50px;
     font-family: sans-serif;
 
     h2 {
         text-align: center;
+        padding-bottom: 10px;
     }
     h3 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #generalInfoID {
         text-align: center;
     }
 }
