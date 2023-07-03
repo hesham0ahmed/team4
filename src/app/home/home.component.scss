@@ -2,18 +2,42 @@
   background: rgba(128, 128, 128, 0.318)
 }
 
-.col1 {
+.col1,
+.col2,
+.col3 {
   color: white;
   font-size: xx-large;
   font-weight: 600;
   // max-width: 10em;
 }
 
+
+
 .my-element {
   display: block;
-  margin-right: 5px;
+  // margin-right: 5px;
   // height: 3em;
   width: 2.3em;
+}
+
+.my-element1 {
+
+  // margin-right: 5px;
+  // height: 3em;
+  // width: 2.3em;
+  // text-align: center;
+  // justify-content: space-between;
+  // align-items: center;
+
+  .member {
+
+    // text-align: center;
+
+
+    justify-content: space-between;
+    // justify-content: space-between;
+
+  }
 }
 
 // .event-day,
@@ -42,3 +66,7 @@
   // max-width: 2.3em;
   border-color: white;
 }
+
+// .col2 {
+//   background: rgba(var(--bs-success-rgb), var(--bs-bg-opacity))
+// }
