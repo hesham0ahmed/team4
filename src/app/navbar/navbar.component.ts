@@ -8,3 +8,14 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
 
 }
+
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar') as HTMLElement;
+  const scrolled = window.scrollY > 0;
+  navbar.classList.toggle('scrolled', scrolled);
+});
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.social') as HTMLElement;
+  const scrolled = window.scrollY > 0;
+  navbar.classList.toggle('scrolled', scrolled);
+});

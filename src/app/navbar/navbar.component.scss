@@ -1,0 +1,44 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.449);
+  margin-top: 35px;
+  transition: background-color 1s ease;
+  /* Add a smooth transition effect */
+}
+
+.navbar.scrolled {
+  background-color: rgba(57, 57, 57, 0.878);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link,
+.navbar .dropdown-item {
+  color: white;
+  font-weight: 600;
+}
+
+.navbar .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: rgb(0, 64, 255);
+}
+
+// ICONS
+.social {
+  display: flex;
+  background: rgba(0, 0, 0, 0.678);
+  color: white;
+  transition: background-color 2s ease;
+}
+
+.social.scrolled {
+  background-color: rgba(57, 57, 57, 0.5);
+  transition: background-color 2s ease;
+}
+
+.social i {
+  margin: 10px;
+  /* Adjust the margin value as needed */
+}
