@@ -5,6 +5,7 @@
     margin: 30px;
     /* Increase the margin bottom to create space between cards */
     /* Light blue to blue gradient */
+
 }
 
 .modal {
@@ -13,9 +14,12 @@
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
     /* Semi-transparent black background for modal overlay */
-    padding-bottom: 60px;
 }
 
 .modal-dialog {
     max-width: 500px;
+}
+
+.container {
+    margin-bottom: 30px;
 }
