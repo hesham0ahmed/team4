@@ -4,9 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 
 const routes: Routes = [
-  {
-    path: '', component: HeroComponent
-  },
+
 ];
 
 @NgModule({
