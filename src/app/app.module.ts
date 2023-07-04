@@ -18,7 +18,9 @@ import { FormsOfMembershipComponent } from './forms-of-membership/forms-of-membe
 import { GetActiveComponent } from './get-active/get-active.component';
 import { MentoringComponent } from './mentoring/mentoring.component';
 import { MembershipFormComponent } from './membership-form/membership-form.component';
-
+import { AboutComponent } from './about/about.component';
+import { CareerComponent } from './career/career.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -36,14 +38,13 @@ import { MembershipFormComponent } from './membership-form/membership-form.compo
     FormsOfMembershipComponent,
     GetActiveComponent,
     MentoringComponent,
-    MembershipFormComponent
-
+    MembershipFormComponent,
+    AboutComponent,
+    CareerComponent,
+    DetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
