@@ -1,5 +1,6 @@
 .spacer {
-  background: rgba(128, 128, 128, 0.318)
+  background: rgba(128, 128, 128, 0.318);
+  background-size: cover;
 }
 
 .spacer1 {
@@ -20,13 +21,14 @@
   color: white;
   font-size: xx-large;
   font-weight: 600;
-  // max-width: 10em;
   margin: 2px;
   max-width: 11.5em;
-
 }
 
-
+.smallp {
+  font-size: 15px;
+  font-weight: 400;
+}
 
 .my-element {
   display: block;
@@ -45,28 +47,28 @@
   // align-items: center;
 
   .member {
-    justify-content: space-between;
+    justify-content: space-around;
 
   }
 }
 
-// .event-day,
-// .event-month {
-//   text-align: center
-// }
+.btn-outline-light,
+.show {
+  color: black;
+
+  &:hover {
+    color: #6394ff;
+  }
+}
 
 .event-day {
   font-size: 0.9em;
-  // font-weight: bolder;
-  // line-height: normal
 }
 
 .event-month {
   font-size: 1em;
   font-weight: 400;
-  // line-height: normal;
   color: black;
-  // background-color: #04799c;
   text-transform: uppercase;
   border-radius: 0 0 2px 2px
 }
@@ -76,10 +78,6 @@
   // max-width: 2.3em;
   border-color: white;
 }
-
-// .col2 {
-//   background: rgba(var(--bs-success-rgb), var(--bs-bg-opacity))
-// }
 
 .btn {
   transition: 0.2s ease;
@@ -157,4 +155,19 @@ p {
 .display-6 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1re
+}
+
+.pr1,
+.pr2,
+.pr3 {
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #6394ff;
+  }
+}
+
+.course {
+  font-weight: 400;
 }
