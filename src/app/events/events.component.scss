@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+div {
+    -o-transition: all;
+    -moz-transition: all;
+    -webkit-transition: all;
+    transition:all;
+}
 .container {
     margin:auto;
     text-align: center;
@@ -23,7 +30,9 @@
     line-height: 1.8;
     color: #333;
     margin:auto;
+    text-align: center;
     max-width: 1000px;
+    
 
     p {
         text-align: justify;
@@ -34,4 +43,97 @@
         display: flex;
         margin-top: 30px;
     }
+
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+
+    .card {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .our-services {
+        margin-top:  50px;
+      }
+      .flip-container {
+        -webkit-perspective: 1000;
+        margin: 0 auto 60px auto;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        cursor:pointer;
+      }
+      
+      .flip-container:hover .flipper {
+        -webkit-transform: rotateY(180deg);
+        cursor:pointer;
+      }
+      .flip-container.hover .flipper {
+        -webkit-transform: rotateY(180deg);
+        cursor:pointer;
+      }
+      
+      .front {
+        
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      
+      .front h3 {
+        text-align: center;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+      }
+      
+      .front img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+      
+      .back {
+        
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transform: rotateY(180deg);
+        text-align: center;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+      }
+      
+      .back h3 {
+        margin-top: 20px;
+      }
+      
+      .back p {
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        margin-right:15px;
+      }
+      
+      .flipper {
+        -webkit-transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        position: relative;
+      }
+
+   
 }
+
+
+
+
+
+
+

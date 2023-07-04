@@ -1,3 +1,10 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
 <div class="container">
     <div class="img_hero">
         <img src="../assets/images/Events/main.jpg" alt="">
@@ -6,5 +13,42 @@
         <h1>Upcoming Events</h1>
     </div>
     <div class="content">
+
+                
+
+        <div class="row row-cols-lg-2 row-cols-md-1">
+        <div *ngFor="let item of events_arr index as id" >
+
+            <div class="flip-container" style="width: 26rem;">
+                <div class="flipper card" style="width: 26rem;">
+
+                  <div class="front card" style="width: 26rem;">
+                    <img class="lazyload card-img-top" src="/assets/images/{{item.photo}}"  >
+                    <div class="card-body" >
+                        <h5 class="card-title">
+                            <h3>{{item.date}}</h3>
+                        </h5>
+                    </div>
+                  </div>
+
+                  <div class="back card" style="width: 26rem;">
+                    <div class="card-body" >
+                        <h5 class="card-title">
+                            <h3>{{item.title}}</h3>
+                        </h5>
+                    </div>
+                    <p class="card-text">{{item.date}}</p>
+                    <p class="card-text">{{item.description}}</p>
+                    
+                  </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
     </div>
 </div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
