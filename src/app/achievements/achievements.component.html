@@ -6,6 +6,21 @@
         <h1>Alumni Achievements</h1>
     </div>
     <div class="content">
+        <div class="row row-cols-lg-2 row-cols-md-1">
+        <div *ngFor="let item of alumni_arr index as id">
+
+            <div class="card" style="width: 26rem;">
+                <img class="card-img-top" src="/{{item.photo}}" >
+                <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <p class="card-text">Career: {{item.career}}</p>
+                  <p class="card-text">Achievements: {{item.achievements}}</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <!--
         <p>
         Members of the College of Arts and Sciences honored alumni for their extraordinary professional achievements, volunteer service, and philanthropy during the 2019 Arts and Sciences Alumni Awards dinner Friday, October 11 in the Student Union Ballroom.
         </p>
@@ -38,6 +53,7 @@
                 <img src="/assets/images/Achievements/2.jpg" alt="">
             </div>
         </div>
+        -->
     </div>
 
 </div>
