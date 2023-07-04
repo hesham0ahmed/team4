@@ -21,6 +21,7 @@ import { MembershipFormComponent } from './membership-form/membership-form.compo
 import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
 import { DetailsComponent } from './details/details.component';
+import { MergeComponent } from './merge/merge.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { DetailsComponent } from './details/details.component';
     AboutComponent,
     CareerComponent,
     DetailsComponent,
+    MergeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
