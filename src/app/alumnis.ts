@@ -1,32 +1,32 @@
 export const alumnis = [
     {
-        name: 'Hesham Ahmed',
-        photo: 'assets/alumni/man.png',
+        name: 'Martin Müller',
+        photo: 'assets/alumni/martin_small.jpg',
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
-        name: 'Mara Federmair',
-        photo: 'assets/alumni/woman.png',
+        name: 'Rose Carmen',
+        photo: 'assets/alumni/rose_small.jpg',
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
-        name: 'Jenufa Simonis',
-        photo: 'assets/alumni/woman.png',
+        name: 'Karla Numeri',
+        photo: 'assets/alumni/karla_small.jpg',
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
-        name: 'Mehdi Salimi',
-        photo: 'assets/alumni/man.png',
+        name: 'Elisabeth Smile',
+        photo: 'assets/alumni/elisabeth_small.jpg',
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
-        name: 'Emelin Bilajbegovic',
-        photo: 'assets/alumni/man.png',
+        name: 'Jonathan Malawi',
+        photo: 'assets/alumni/jonathan_small.jpg',
         career: 'Full Stack Developer',
         achievements: '100%'
     }, {
-        name: 'Gazmend Aliu',
-        photo: 'assets/alumni/man.png',
+        name: 'Tariq Wimmer',
+        photo: 'assets/alumni/tariq_small.jpg',
         career: 'Full Stack Developer',
         achievements: '100%'
     },
