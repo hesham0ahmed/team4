@@ -20,3 +20,14 @@
 #navbarNavDropdown {
   margin-top: 5px;
 }
+
+.nav-link {
+
+  transition: 0.1s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    font-weight: 500;
+  }
+
+}
