@@ -1,9 +1,22 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
 .taller-div {
-    height: 700px;
+    height: 485px;
     /* Adjust the height value as needed */
+    position: relative;
+
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    letter-spacing: 3px;
 }
