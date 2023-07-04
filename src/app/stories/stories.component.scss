@@ -19,6 +19,12 @@
     color: black;
     font-size: 60px;
     letter-spacing: 4px;
+
+    &:hover {
+        color: #6096BA;
+        text-shadow: 2px 2px 2px black;
+        font-size: 100px;
+    }
 }
 
 .carousel-item {
@@ -45,6 +51,21 @@ h2 {
     &:hover {
         color: #6096BA;
         text-shadow: 2px 2px 2px black;
+        animation: rotate 0.7s linear;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -67,4 +88,5 @@ p {
     margin: 0 auto;
     width: 40%;
     border-radius: 20px;
+    /* transform: translate(-50%, -50%); */
 }
