@@ -14,12 +14,9 @@ import { CareerComponent } from './career/career.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 import { HomeComponent } from './home/home.component';
 import { MembershipFormComponent } from './membership-form/membership-form.component';
-<<<<<<< HEAD
 import { RenewDataComponent } from './renew-data/renew-data.component';
-=======
 import { StoriesComponent } from './stories/stories.component';
 import { MergeComponent } from './merge/merge.component';
->>>>>>> 25ab16e403bc7a0ebf7163ef656b0e54e463b201
 
 
 const routes: Routes = [
@@ -58,13 +55,11 @@ const routes: Routes = [
     path: "membershipForm", component: MembershipFormComponent
   },
   {
-<<<<<<< HEAD
     path: "renewData", component: RenewDataComponent
-=======
+  }, {
     path: "stories", component: StoriesComponent
   }, {
     path: "merge", component: MergeComponent
->>>>>>> 25ab16e403bc7a0ebf7163ef656b0e54e463b201
   }
 
 ];
