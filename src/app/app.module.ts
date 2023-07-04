@@ -23,6 +23,7 @@ import { CareerComponent } from './career/career.component';
 import { DetailsComponent } from './details/details.component';
 import { RenewDataComponent } from './renew-data/renew-data.component';
 import { MergeComponent } from './merge/merge.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { MergeComponent } from './merge/merge.component';
     RenewDataComponent,
     MergeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,78 @@
+h3 {
+    margin-top: 90px;
+    margin-left: 200px;
+}
+
+form {
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.formEntry {
+    padding-top: 30px;
+
+    .myLabel {
+        width: 400px;
+    }
+
+    .myEntry {
+        width: 400px;
+    }
+
+    .myInfo {
+        font-size: small;
+        color: gray;
+        padding-left: 400px;
+        width: 800px;
+    }
+    .myMessage {
+    height: 200px;
+    width: 400px;
+    }
+
+    .myMessageText {
+        vertical-align: top;
+    }
+
+    .myCheckbox {
+        width: 500px;
+    }
+}
+
+.myBtn {
+    padding-top: 40px;
+
+    .myButton {
+        height: 40px;
+        width: 200px;
+        border-style: none;
+        border-radius: 5px;
+        background-color: #E7ECEF;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.362);
+        transition: 0.2s ease;
+    }
+    .myButton:hover {
+        transform: scale(1.05);
+    }
+
+    .myButton:active {
+        transform: scaleY(1.1);
+    }
+}
+
+
+.required:after {
+    content:" *";
+    color: #A3CEF1;
+    }
+
+#pForm {
+    color: #A3CEF1;
+    padding-top: 20px;
+}
+
+span {
+    color: #A3CEF1;
+}
+
+

@@ -20,7 +20,6 @@
         height: 500px;
         padding: 50px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
     }
 
     .membershipForms {
@@ -58,26 +57,43 @@
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    padding-bottom: 40px;
 
     .myButton {
         height: 60px;
         width: 600px;
         border-style: none;
-        background-color: #8B8C89;
-        color: white;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.362);
+        transition: 0.2s ease;
+    }
+    .myButton:hover {
+        transform: scale(1.05);
+    }
+
+    .myButton:active {
+        transform: scaleY(1.1);
     }
 }
 
 .myBtn2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: 59px;
 
-    .myButton {
+    .myButton2 {
         height: 60px;
-        width: 600px;
+        width: 220px;
         border-style: none;
-        background-color: #8B8C89;
-        color: white;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.362);
+        transition: 0.2s ease;
+    }
+    .myButton2:hover {
+        transform: scale(1.05);
+    }
+
+    .myButton2:active {
+        transform: scaleY(1.1);
     }
 }

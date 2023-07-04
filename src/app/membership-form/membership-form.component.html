@@ -2,36 +2,61 @@
 
 <h3>Become a member</h3>
 
-<form>
-    <div class="mb-3">
-        <label for="name" class="form-label">Full name:</label>
-        <input type="name" class="form-control" id="name" aria-describedby="name">
-        <div id="name" class="form-text"></div>
-      </div>
-      <div class="mb-3">
-        <label for="birthdate" class="form-label">Birth date:</label>
-        <input type="email" class="form-control" id="birthdate" aria-describedby="emailHelp">
-      </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label for="phonenumber" class="form-label">Phone number:</label>
-        <input type="number" class="form-control" id="phonenumber" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your phonenumber with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label for="phonenumber" class="form-label">Adresse / street + number:</label>
-        <input type="number" class="form-control" id="phonenumber" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-        <label for="phonenumber" class="form-label">City and postal code</label>
-        <input type="number" class="form-control" id="phonenumber" aria-describedby="emailHelp">
-    </div>
-    <div>
-    <select class="form-select" id="country" name="country">
+<form class="myForm" [formGroup]="members" (ngSubmit)="onSubmit()">
+  <div>
+    <p id="pForm">* is mandatory</p>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel required">Full name: </label>
+    <input class="myEntry" type="text" formControlName="name">
+    <p class="errorInfo" *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.name.errors?.['required']">name can't be empty</span>
+    </p>
+  </div>
+  
+  <div class="formEntry">
+    <label class="myLabel required">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+    <p *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.birthday.errors?.['required']">birthday can't be empty</span>
+    </p>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel required">Email:  </label>
+    <input class="myEntry" type="text" formControlName="email">
+    <div class="myInfo">We'll never share your emailadress with anyone else.</div>
+    <p *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.email.errors?.['required']">emailadress can't be empty</span>
+    </p>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel">Phonenumber:  </label>
+    <input class="myEntry" type="text" formControlName="number">
+    <div class="myInfo">We'll never share your phonenumber with anyone else.</div>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel required">Address (street + number):  </label>
+    <input class="myEntry" type="text" formControlName="address">
+    <p *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.address.errors?.['required']">address can't be empty</span>
+    </p>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel required">City and postal code:  </label>
+    <input class="myEntry" type="text" formControlName="city">
+    <p *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.city.errors?.['required']">city and postal code can't be empty</span>
+    </p>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel required">Select country:  </label>
+    <select class="myEntry" id="country" name="country">
         <option>select country</option>
         <option value="AF">Afghanistan</option>
         <option value="AX">Aland Islands</option>
@@ -285,51 +310,87 @@
         <option value="YE">Yemen</option>
         <option value="ZM">Zambia</option>
         <option value="ZW">Zimbabwe</option>
+      </select>
+      <p *ngIf="members.invalid && members.touched">
+        <span *ngIf="members.controls.country.errors?.['required']">country can't be empty</span>
+      </p>
+    </div>
+
+    <div class="formEntry">
+      <label class="myLabel required">Username:  </label>
+      <input class="myEntry" type="text" formControlName="username">
+      <p *ngIf="members.invalid && members.touched">
+        <span *ngIf="members.controls.username.errors?.['required']">username can't be empty</span>
+      </p>
+    </div>
+    <div class="formEntry">
+      <label class="myLabel required">Pasword:  </label>
+      <input class="myEntry" type="password" formControlName="password">
+      <p *ngIf="members.invalid && members.touched">
+        <span *ngIf="members.controls.password.errors?.['required']">Password required</span>
+        <span *ngIf="members.controls.password.errors?.['minlength']">Password must be 8 char at least</span>
+    </p>
+    </div>
+    <div class="formEntry">
+      <label class="myLabel required">Confirm password:  </label>
+      <input class="myEntry" type="password" formControlName="passwordcheck">
+      <p *ngIf="members.invalid && members.touched">
+        <span *ngIf="members.controls.passwordcheck.errors?.['required']">Password required</span>
+        <span *ngIf="members.controls.passwordcheck.errors?.['minlength']">Password must be 8 char at least</span>
+    </p>
+    </div>
+
+  <div class="formEntry">
+    <label class="myLabel myMessageText" for="text">Message:</label>
+    <textarea name="text" id="text" cols="50" rows="10" formControlName="message"></textarea>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel required">Choose type of membership:</label>
+    <select class="myEntry" id="membership" formControlName="membership">
+      <option>membership types</option>
+      <option value="AF">membership 1</option>
+      <option value="AF">membership 2</option>
+      <option value="AF">membership 3</option>
     </select>
-    </div>
-    <div class="mb-3">
-        <label for="username" class="form-label">Username:</label>
-        <input type="username" class="form-control" id="username" aria-describedby="username">
-    </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password:</label>
-        <input type="password" class="form-control" id="password" aria-describedby="password">
-    </div>
-    <div class="mb-3">
-        <label for="passwordcheck" class="form-label">Confirm your password:</label>
-        <input type="passwordcheck" class="form-control" id="passwordcheck" aria-describedby="passwordcheck">
-    </div>
-    <div>
-        <div class="btn-group">
-            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-            Choose your type of membership
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Membership 1</a></li>
-              <li><a class="dropdown-item" href="#">Membership 2</a></li>
-              <li><a class="dropdown-item" href="#">Membership 3</a></li>
-            </ul>
-          </div>
-          <div id="emailHelp" class="form-text">Membership 1: participant in an ongoing cours <br> Membership 2: participant of a former course, graduation less then 1 year ago<br>Membership 3: open for everyone<br></div>
-    </div>
-    <div>
-        <div class="btn-group">
-            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-            Choose your payment type
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">SEPA payment slip</a></li>
-              <li><a class="dropdown-item" href="#">direct payment</a></li>
-            </ul>
-          </div>
-    </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">I want to receive the newsletter</label>
-      </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">I agree to the terms of the Privacy Statement</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+    <div class="myInfo">Membership 1: participant in an ongoing cours <br> Membership 2: participant of a former course, graduation less then 1 year ago<br>Membership 3: open for everyone<br></div>
+    <p *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.membership.errors?.['required']">choose a membership type</span>
+    </p>
+  </div>
+
+  <div class="formEntry">
+    <label class="myLabel">Choose payment type:</label>
+    <select class="myEntry" id="payment" formControlName="payment">
+      <option>payment types</option>
+      <option value="AF">SEPA payment slip</option>
+      <option value="AF">direct payment</option>
+    </select>
+  </div>
+
+  <div class="formEntry">
+    <label class="myCheckbox">I want to receive the newsletter</label>
+    <input type="checkbox" id="newsletter" formControlName="newsletter" value="newsletter">
+  </div>
+
+  <div class="formEntry">
+    <label class="myCheckbox required">I agree to the terms of the Privacy Statement</label>
+    <input type="checkbox" id="privacy" formControlName="privacy" value="privacy">
+    <p *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.privacy.errors?.['required']">you need to check the privacy statement!</span>
+    </p>
+  </div>
+
+  <div class="formEntry">
+    <label class="myCheckbox required">I consent on electronical data processing.</label>
+    <input type="checkbox" id="dataprocessing" formControlName="dataprocessing" value="dataprocessing">
+    <p *ngIf="members.invalid && members.touched">
+      <span *ngIf="members.controls.dataprocessing.errors?.['required']">you need to allow data processing</span>
+    </p>
+  </div>
+ 
+  <div class="myBtn">
+    <button class="myButton" type="submit" value="submit">Become a member</button>
+  </div>
+</form>
+
