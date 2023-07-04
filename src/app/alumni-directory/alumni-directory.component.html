@@ -1,5 +1,5 @@
 <section>
-    <div class="container">
+    <!--     <div class="container">
         <div class="row">
             <div class="col-md-4" *ngFor="let alumni of alumniData">
                 <div class="card mb-6">
@@ -7,6 +7,23 @@
                     <div class="card-body">
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let alumni of alumniData">
+                <div class="card mb-6">
+                    <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ alumni.name }}</h3>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
+                            <a class="btn btn-secondary" routerLink="/stories"> Story </a>
+                        </div>
                     </div>
                 </div>
             </div>
