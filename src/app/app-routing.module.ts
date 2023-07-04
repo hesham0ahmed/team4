@@ -15,6 +15,7 @@ import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.co
 import { HomeComponent } from './home/home.component';
 import { MembershipFormComponent } from './membership-form/membership-form.component';
 import { StoriesComponent } from './stories/stories.component';
+import { MergeComponent } from './merge/merge.component';
 
 
 const routes: Routes = [
@@ -54,6 +55,8 @@ const routes: Routes = [
   },
   {
     path: "stories", component: StoriesComponent
+  }, {
+    path: "merge", component: MergeComponent
   }
 
 ];
