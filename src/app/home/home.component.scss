@@ -94,8 +94,8 @@
 // SERVICES
 
 section {
-  padding-top: 4rem;
-  padding-bottom: 5rem;
+  // padding-top: 4rem;
+  padding-bottom: 1rem;
   background-color: #f1f4fa;
 }
 
@@ -176,6 +176,51 @@ p {
 
 // COURSES
 
+// Overview
+
+.overviewcourse {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  overflow: hidden;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.overviewcourse::before,
+.overviewcourse::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.7s, transform 1s;
+}
+
+.overviewcourse::before {
+  transform-origin: center center;
+  transform: translate(-50%, -50%) scale(0.8);
+  color: #274C77;
+}
+
+.overviewcourse::after {
+  transform-origin: center center;
+  transform: translate(-50%, -50%) scale(1.2);
+  color: #6394ff;
+}
+
+.overviewcourse:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.overviewcourse:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
 
 // only the logo
 .courses {
