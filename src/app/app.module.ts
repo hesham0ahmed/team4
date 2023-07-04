@@ -21,7 +21,11 @@ import { MembershipFormComponent } from './membership-form/membership-form.compo
 import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
 import { DetailsComponent } from './details/details.component';
+<<<<<<< HEAD
 import { RenewDataComponent } from './renew-data/renew-data.component';
+=======
+import { MergeComponent } from './merge/merge.component';
+>>>>>>> 25ab16e403bc7a0ebf7163ef656b0e54e463b201
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { RenewDataComponent } from './renew-data/renew-data.component';
     AboutComponent,
     CareerComponent,
     DetailsComponent,
+<<<<<<< HEAD
     RenewDataComponent,
+=======
+    MergeComponent,
+>>>>>>> 25ab16e403bc7a0ebf7163ef656b0e54e463b201
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
