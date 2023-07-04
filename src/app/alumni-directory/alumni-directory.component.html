@@ -1,18 +1,4 @@
 <section>
-    <!--     <div class="container">
-        <div class="row">
-            <div class="col-md-4" *ngFor="let alumni of alumniData">
-                <div class="card mb-6">
-                    <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
-                    <div class="card-body">
-                        <h3 class="card-title">{{ alumni.name }}</h3>
-                        <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="container">
         <div class="row">
             <div class="col-md-4" *ngFor="let alumni of alumniData">
@@ -22,7 +8,7 @@
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <div class="d-flex justify-content-between">
                             <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
-                            <a class="btn btn-secondary" routerLink="/stories"> Story </a>
+                            <a class="btn btn-secondary" routerLink="/stories">Story</a>
                         </div>
                     </div>
                 </div>
@@ -41,8 +27,8 @@
                 </div>
                 <div class="modal-body">
                     <img [src]="selectedAlumni.photo" class="img-fluid" alt="Alumni Photo">
-                    <p>Career: {{ selectedAlumni.career }}</p>
-                    <p>Achievements: {{ selectedAlumni.achievements }}</p>
+                    <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
+                    <p id="modal-text">Achievements: {{ selectedAlumni.achievements }}</p>
                 </div>
             </div>
         </div>
