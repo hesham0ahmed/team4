@@ -56,7 +56,7 @@
       <h5 class="ms-5 text-primary-emphasis fs-3 pt-1 pb-3">Meet the Team</h5>
       <div class="frame border border-3 border-primary-subtle ms-2 bg-primary">
         <div
-          class="team row row-cols-lg-4 ow-cols-md-3 ow-cols-sm-2 ow-cols-xs-1 justify-content-center mt-5 mb-5"
+          class="team row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1 justify-content-center mt-5 mb-5"
         >
           <div class="teamCard" *ngFor="let member of team">
             <div
@@ -73,14 +73,13 @@
                 {{ member.name }}
               </h5>
               <h6 class="mt-3 mb-3 text-white fs-5">{{ member.position }}</h6>
-              <p>
-                <a
-                  href="https://linkedin.com/your/profile/url"
-                  class="social-icon si-rounded si-small si-linkedin"
-                >
-                  <i class="icon-linkedin"></i>
-                </a>
-              </p>
+              <div
+                class="d-flex justify-content-center mb-2 mt-2 text-white fs-4"
+              >
+                <i class="fa-brands fa-instagram ms-1 me-1"></i>
+                <i class="fa-brands fa-twitter ms-1 me-1"></i>
+                <i class="fa-brands fa-facebook ms-1 me-1"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -100,7 +99,7 @@
       </p>
       <br />
       <button class="btn btn-primary ms-5" routerLink="/">
-        Become a member
+        Get a membership
       </button>
       <br />
       <div class="images mt-5">
@@ -141,7 +140,7 @@
       <h5 class="ms-5 text-primary-emphasis fs-3 pt-1 pb-3">
         This is what Alumnis say about Us
       </h5>
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <!-- <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -164,44 +163,45 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div
-            class="alumnis row row-cols-lg-4 ow-cols-md-3 ow-cols-sm-2 ow-cols-xs-1 justify-content-center"
-          >
-            <div
-              class="alumniCard carousel-item active"
-              *ngFor="let alumni of rating"
-            >
-              <div class="card" style="width: 18rem">
-                <img src="{{ alumni.img }}" alt="" />
-                <p>"{{ alumni.quote }}"</p>
-                <h6>{{ alumni.name }}</h6>
-                <hr />
-                <p>
-                  Knowledge: <span> &#9733; </span
-                  ><span> {{ alumni.rate1 }}</span
-                  >/10
-                </p>
-                <p>
-                  Ambience: <span> &#9733; </span
-                  ><span> {{ alumni.rate2 }}</span
-                  >/10
-                </p>
-                <p>
-                  Community: <span> &#9733; </span
-                  ><span> {{ alumni.rate3 }}</span
-                  >/10
-                </p>
-                <p>
-                  Trainers: <span> &#9733; </span
-                  ><span> {{ alumni.rate4 }}</span
-                  >/10
-                </p>
-              </div>
+        <div class="carousel-inner" style="background-color: red"> -->
+      <div
+        class="alumnis row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1 justify-content-center"
+      >
+        <div class="alumniCard" *ngFor="let alumni of rating">
+          <div class="card" style="width: 18rem">
+            <!-- <img src="{{ alumni.img }}" alt="" /> -->
+            <div class="pt-1 pb-1 ps-1 pe-1">
+              <p class="fw-light fst-italic fs-5">"{{ alumni.quote }}"</p>
+            </div>
+            <h6 class="ms-2">- {{ alumni.name }}</h6>
+            <hr />
+            <div class="pt-3 pb-3 ps-3 pe-2">
+              <p>
+                Knowledge: <span id="star"> &#9733; </span
+                ><span> {{ alumni.rate1 }}</span
+                >/10
+              </p>
+              <p>
+                Ambience: <span id="star"> &#9733; </span
+                ><span> {{ alumni.rate2 }}</span
+                >/10
+              </p>
+              <p>
+                Community: <span id="star"> &#9733; </span
+                ><span> {{ alumni.rate3 }}</span
+                >/10
+              </p>
+              <p>
+                Trainers: <span id="star"> &#9733; </span
+                ><span> {{ alumni.rate4 }}</span
+                >/10
+              </p>
             </div>
           </div>
         </div>
-        <button
+      </div>
+    </div>
+    <!-- <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
@@ -220,6 +220,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
