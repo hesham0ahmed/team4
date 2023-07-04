@@ -2,6 +2,10 @@
   background: rgba(128, 128, 128, 0.318)
 }
 
+.cards1 {
+  justify-content: center;
+}
+
 .col1,
 .col2,
 .col3 {
@@ -9,6 +13,9 @@
   font-size: xx-large;
   font-weight: 600;
   // max-width: 10em;
+  margin: 2px;
+  max-width: 11.5em;
+
 }
 
 
