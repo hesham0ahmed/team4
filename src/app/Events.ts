@@ -16,7 +16,7 @@ export const Events : IEvents[] = [
     } ,
 
     {
-        title: "Celebrity/Motivational Speaker" ,
+        title: "Motivational Speaker" ,
         date: "12.12.2023" , 
         description : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus perferendis a adipisci repellendus laudantium," ,
         photo : "Events/3.jpg"
