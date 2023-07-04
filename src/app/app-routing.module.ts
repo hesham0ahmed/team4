@@ -60,6 +60,9 @@ const routes: Routes = [
     path: "stories", component: StoriesComponent
   }, {
     path: "merge", component: MergeComponent
+  },
+  {
+    path: "events/:idDetail", component: EventsComponent
   }
 
 ];

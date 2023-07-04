@@ -1,35 +1,83 @@
-.sectionMembership {
-    height: 300px;
-    padding-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 50px;
-    font-family: sans-serif;
+.infoMembership {
+        margin: 50px 130px 50px 130px;
+        
+        h2 {
+            margin-bottom: 20px;
+        }
+        h4 {
+            margin-bottom: 50px;
+        }
+}
 
-    h2 {
-        text-align: center;
-        padding-bottom: 10px;
+.class1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .generalInfo {
+        background-color: #E7ECEF;
+        width: 600px;
+        height: 500px;
+        padding: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
-    h3 {
-        text-align: center;
-        padding-bottom: 10px;
+
+    .membershipForms {
+        background-color: #A3CEF1;
+        width: 600px;
+        height: 500px;
+        padding: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    #generalInfoID {
-        text-align: center;
+}
+
+.class2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .membershipAdvanteges {
+        background-color: #A3CEF1;
+        width: 600px;
+        height: 500px;
+        padding: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .membershipNonFinancial {
+        background-color: #E7ECEF;
+        width: 600px;
+        height: 500px;
+        padding: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
 
-.generalInfo {
-    background-color: #d6ccc2;
+.myBtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .myButton {
+        height: 60px;
+        width: 600px;
+        border-style: none;
+        background-color: #8B8C89;
+        color: white;
+    }
 }
 
-.membershipForms {
-    background-color: #edede9;
-}
+.myBtn2 {
+    display: flex;
+    justify-content: center;
 
-.membershipAdvanteges {
-    background-color: #d6ccc2;
-}
-
-.membershipNonFinancial {
-    background-color: #edede9;
+    .myButton {
+        height: 60px;
+        width: 600px;
+        border-style: none;
+        background-color: #8B8C89;
+        color: white;
+    }
 }
