@@ -29,7 +29,7 @@ export const rating = [
     course: 'Full-Stack',
     year: 2023,
     quote:
-      'Taking this class was my introduction to the tech industry. I felt well supported and guided. The course participants were very diverse and that led to many interesting conversations. Joining the Alumni Club allows me to stay in conntect with like-minded people to improve my skills and exchange synergies.',
+      'Taking this class was my introduction to the tech industry. I felt well supported and guided. The course participants were very diverse, that led to many interesting conversations. The Alumni Club allows me to stay in conntect with like-minded people to improve skills and exchange synergies.',
     rate1: 10,
     rate2: 10,
     rate3: 9.5,
