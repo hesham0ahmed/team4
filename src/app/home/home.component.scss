@@ -85,3 +85,15 @@
 // .col2 {
 //   background: rgba(var(--bs-success-rgb), var(--bs-bg-opacity))
 // }
+
+.btn {
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scaleY(1.1);
+}
