@@ -1,1 +1,22 @@
-<p>benefits works!</p>
+<!-- <p>benefits works!</p> -->
+
+<h2>Exclusive benefits for our alumni-network members</h2>
+
+<div class="containerBenefits">
+    <div *ngFor = "let benefit of benefits">
+        <div class="card myCard">
+            <img id="imgMenu" src="{{benefit.photo}}" class="card-img-top myImage" alt="pizza">
+            <div class="card-body">
+                <div class="card-body">
+                    <h5 class="card-title">{{benefit.title}}</h5>
+                    <p class="card-text">benefit: {{benefit.benefit}} %</p>
+                    <hr>
+                    <p class="card-text">{{benefit.description}}</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4>...and more to come!</h4>

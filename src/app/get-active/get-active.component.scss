@@ -1,0 +1,45 @@
+
+h2, h3 {
+    text-align: center;
+}
+
+.getActive {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.idea {
+    background-color: #e9edc9;
+
+}
+
+.expertise {
+    background-color: #ccd5ae;
+}
+
+.payMembership {
+    background-color: #e9edc9;
+}
+
+.areYouMember {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+
+    .noMember {
+        height: 200px;
+        width: 300px;
+        background-color: #d4a373;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .yesMember {
+        height: 200px;
+        width: 300px;
+        background-color: #d4a373;
+        text-align: center;
+        padding-top: 80px;
+    }
+}

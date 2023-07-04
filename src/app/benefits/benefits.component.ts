@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Ibenefits } from '../Ibenefits';
+import { benefits } from '../benefits';
 
 @Component({
   selector: 'app-benefits',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./benefits.component.scss']
 })
 export class BenefitsComponent {
+
+  benefits: Ibenefits [] = benefits;
+
+  constructor () {}
 
 }

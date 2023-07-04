@@ -14,6 +14,7 @@ import { CareerComponent } from './career/career.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 import { HomeComponent } from './home/home.component';
 import { MembershipFormComponent } from './membership-form/membership-form.component';
+import { RenewDataComponent } from './renew-data/renew-data.component';
 import { StoriesComponent } from './stories/stories.component';
 import { MergeComponent } from './merge/merge.component';
 
@@ -54,6 +55,8 @@ const routes: Routes = [
     path: "membershipForm", component: MembershipFormComponent
   },
   {
+    path: "renewData", component: RenewDataComponent
+  }, {
     path: "stories", component: StoriesComponent
   }, {
     path: "merge", component: MergeComponent
