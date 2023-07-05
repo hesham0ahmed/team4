@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 .slide {
     margin: 0;
@@ -25,7 +25,7 @@
     letter-spacing: 4px;
     z-index: 1;
     transition: 0.5s ease;
-    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
 
     &:hover {
         color: #6096BA;
@@ -117,7 +117,7 @@ p {
     &:hover {
         font-size: 28px;
         color: black;
-        font-family: 'Courgette', cursive;
+        font-family: 'Dancing Script', cursive;
         text-shadow: 2px 2px 2px #6096BA;
     }
 
