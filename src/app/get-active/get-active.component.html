@@ -1,34 +1,42 @@
 <!-- <p>get-active works!</p> -->
 
-<h2>You wish to participate, communicate, network?</h2>
-<h3>Join us!</h3>
-
-<div class="getActive">
-    <div class="idea">
-        <p>Do you have ideas or wishes for specific activities, panel discussion or something totally new, our alumni club should work on?</p>
-        <p>We are always happy to implement new networking and information tools and events.</p>
-        <p>Tell us your idea either in an Email or lets talk at our next event.</p>
+<div class="content">
+    <div class="left">
+        <div class="headings">
+            <h2 class="mb-5">You wish to participate, communicate, network?</h2>
+            <h3>Join us!</h3>
+        </div>
+        <div class="areYouMember">
+            <div class="noMember">
+                <p>No member yet?</p>
+                <button routerLink="/membershipForm">
+                    <span>Become member</span>
+                </button>
+            </div>
+            <div class="yesMember">
+                <p>You are a member but your data changed?</p>
+                <button routerLink="/renewData">
+                    <span>Renew data</span>
+                </button>
+            </div>
+        </div>
     </div>
-    <div class="expertise">
-        <p>You work in a company, you are CEO or work in a management position?</p>
-        <p>It is important for you, to share your expertise, convice young tech-lovers and gain new employees?</p>
-        <p>We would love to invite you for a panel discussion or a lecture.</p>
-    </div>
-    <div class="payMembership">
-        <p>You cannot support with ideas or knowledge?</p>
-        <p>Nevertheless, it is important for you to support new tech-loving students?</p>
-        <p>Just get involved, be a member, join us!</p>
-    </div>
-</div>
-
-<div class="areYouMember">
-    <div class="noMember">
-        <p>No member yet?</p>
-        <button routerLink="/membershipForm">Become a member</button>
-    </div>
-    <div class="yesMember">
-        <p>You are a member but your data changed?</p>
-        <button routerLink="/renewData">Renew your data</button>
+    <div class="right">
+        <div class="idea">
+            <p>Do you have ideas or wishes for specific activities, panel discussion or something totally new, our alumni club should work on?</p>
+            <p>We are always happy to implement new networking and information tools and events.</p>
+            <p>Tell us your idea either in an Email or lets talk at our next event.</p>
+        </div>
+        <div class="expertise">
+            <p>You work in a company, you are CEO or work in a management position?</p>
+            <p>It is important for you, to share your expertise, convice young tech-lovers and gain new employees?</p>
+            <p>We would love to invite you for a panel discussion or a lecture.</p>
+        </div>
+        <div class="payMembership">
+            <p>You cannot support with ideas or knowledge?</p>
+            <p>Nevertheless, it is important for you to support new tech-loving students?</p>
+            <p>Just get involved, be a member, join us!</p>
+        </div>
     </div>
 </div>
 
