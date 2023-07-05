@@ -114,4 +114,11 @@ p {
     font-size: 26px;
     text-shadow: 2px 2px 2px black;
 
+    &:hover {
+        font-size: 28px;
+        color: black;
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 2px 2px 2px #6096BA;
+    }
+
 }
