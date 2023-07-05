@@ -313,3 +313,275 @@ p {
 .course {
   font-weight: 400;
 }
+
+// LEARN MORE BUTTON
+.button00 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.button00.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+.button00.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+.button00.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.button00.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.button00.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.button00.learn-more .button00-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #283628;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button00:hover .circle {
+  width: 100%;
+}
+
+.button00:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.button00:hover .button00-text {
+  color: #fff;
+}
+
+// BUTTON 01 - COURSES
+
+#btn01-message {
+  --text-color: #000;
+  --bg-color-sup: #d2d2d2;
+  --bg-color: #f4f4f4;
+  --bg-hover-color: #ffffff;
+  --online-status: #00da00;
+  --font-size: 16px;
+  --btn-transition: all 0.2s ease-out;
+}
+
+.button01-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 400 var(--font-size) Helvetica Neue, sans-serif;
+  box-shadow: 0 0 2.17382px rgba(0, 0, 0, .049), 0 1.75px 6.01034px rgba(0, 0, 0, .07), 0 3.63px 14.4706px rgba(0, 0, 0, .091), 0 22px 48px rgba(0, 0, 0, .14);
+  background-color: var(--bg-color);
+  border-radius: 68px;
+  cursor: pointer;
+  padding: 6px 10px 6px 6px;
+  width: fit-content;
+  height: 40px;
+  border: 0;
+  overflow: hidden;
+  position: relative;
+  transition: var(--btn-transition);
+}
+
+.button01-message:hover {
+  height: 56px;
+  padding: 8px 20px 8px 8px;
+  background-color: var(--bg-hover-color);
+  transition: var(--btn-transition);
+}
+
+.button01-message:active {
+  transform: scale(0.99);
+}
+
+.content-avatar {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  transition: var(--btn-transition);
+  position: relative;
+}
+
+.button01-message:hover .content-avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--bg-color-sup);
+}
+
+.user-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-user {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  right: 1px;
+  bottom: 1px;
+  border-radius: 50%;
+  outline: solid 2px var(--bg-color);
+  background-color: var(--online-status);
+  transition: var(--btn-transition);
+  animation: active-status 2s ease-in-out infinite;
+}
+
+.button01-message:hover .status-user {
+  width: 10px;
+  height: 10px;
+  right: 1px;
+  bottom: 1px;
+  outline: solid 3px var(--bg-hover-color);
+}
+
+.notice-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 8px;
+  text-align: initial;
+  color: var(--text-color);
+}
+
+.username {
+  letter-spacing: -6px;
+  height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: var(--btn-transition);
+}
+
+.user-id {
+  font-size: 12px;
+  letter-spacing: -6px;
+  height: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: var(--btn-transition);
+}
+
+.lable-message {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: var(--btn-transition);
+}
+
+.button01-message:hover .username {
+  height: auto;
+  letter-spacing: normal;
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--btn-transition);
+}
+
+.button01-message:hover .user-id {
+  height: auto;
+  letter-spacing: normal;
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--btn-transition);
+}
+
+.button01-message:hover .lable-message {
+  height: 0;
+  transform: scaleY(0);
+  transition: var(--btn-transition);
+}
+
+.lable-message,
+.username {
+  font-weight: 600;
+}
+
+.number-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  background-color: green;
+  border-radius: 20px;
+}
+
+/*==============================================*/
+@keyframes active-status {
+  0% {
+    background-color: var(--online-status);
+  }
+
+  33.33% {
+    background-color: #93e200;
+  }
+
+  66.33% {
+    background-color: #93e200;
+  }
+
+  100% {
+    background-color: var(--online-status);
+  }
+}

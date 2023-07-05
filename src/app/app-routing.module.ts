@@ -63,7 +63,10 @@ const routes: Routes = [
   },
   {
     path: "events/:idDetail", component: EventsComponent
+  }, {
+    path: "merge/:idDetail", component: MergeComponent
   }
+
 
 ];
 
