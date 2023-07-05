@@ -6,7 +6,7 @@
                 <div class="card mb-6">
                     <div>
                         <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
-                        <div class="overlay" *ngIf="alumni.hovered">I am {{alumni.name}} and I am<br>a student at
+                        <div class="overlay" *ngIf="alumni.hovered">Hi,I'm {{alumni.name}} and I am<br>a student at
                             Alumnifactory</div>
                     </div>
                     <div class="card-body" (mouseenter)="alumni.hovered = true" (mouseleave)="alumni.hovered = false">
