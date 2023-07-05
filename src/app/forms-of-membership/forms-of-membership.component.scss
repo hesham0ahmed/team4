@@ -1,32 +1,93 @@
 h2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    text-align: center;
 }
 
-.typesAndPayment {
-    margin-left: 50px;
-    margin-right: 50px;
-    
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 80px 80px;
+    padding: 20px;
+
+    .leftSide {
+        flex-direction: column;
+        padding-right: 25px;
+
+        .membershipFormInfo {
+            width: 350px;
+            height: 275px;
+            background-color: #E7ECEF;
+            margin-bottom: 25px;
+            padding: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .membershipForms {
+            width: 350px;
+            height: 400px;
+            background-color: #E7ECEF;
+            padding: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+    .rightSide {
+        flex-direction: column;
+        padding-left: 25px;
+
+        .paymentInfo {
+            width: 350px;
+            height: 400px;
+            background-color: #A3CEF1;
+            margin-bottom: 25px;
+            padding: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .membershipWhy {
+            width: 350px;
+            height: 275px;
+            background-color: #A3CEF1;
+            padding: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
 }
 
-
-.membershipFormInfo {
-    height: 200px;
-    background-color: #edede9;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 50px;
+button {
+    background: #fff;
+    border: none;
+    padding: 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    width: 140px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.362);
+    margin-right: 5px;
 }
-
-.membershipForms {
-    height: 300px;
-    background-color: #f5ebe0;
-    margin-bottom: 20px;
-    padding-left: 50px;
+span {
+    display: inline-block;
+    transform: skew(21deg);
 }
-
-.paymentInfo {
-    height: 300px;
-    background-color: #edede9;
-    padding-left: 50px;
-}
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #A3CEF1;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }

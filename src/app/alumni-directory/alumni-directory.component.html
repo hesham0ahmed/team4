@@ -7,7 +7,7 @@
                     <div class="card-body">
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <div class="d-flex justify-content-between">
-                            <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
+                            <button class="btn btn-primary" (click)="showDetails(alumni)">Achievment</button>
                             <a class="btn btn-secondary" routerLink="/stories">Stories</a>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="modal-body">
                     <img [src]="selectedAlumni.photo" class="" alt="Alumni Photo">
-                    <p>Achievements: {{ selectedAlumni.text }}</p>
+                    <p id="p_1">Achievements:<br> {{ selectedAlumni.text }}</p>
                     <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
                     <p id="modal-text">Score: {{ selectedAlumni.achievements }}</p>
                 </div>

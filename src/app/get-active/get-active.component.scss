@@ -1,45 +1,121 @@
 
-h2, h3 {
-    text-align: center;
-}
-
-.getActive {
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.idea {
-    background-color: #e9edc9;
-
-}
-
-.expertise {
-    background-color: #ccd5ae;
-}
-
-.payMembership {
-    background-color: #e9edc9;
-}
-
-.areYouMember {
+.content {
     display: flex;
     justify-content: space-around;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 80px 80px 400px 80px;
 
-    .noMember {
-        height: 200px;
-        width: 300px;
-        background-color: #d4a373;
-        text-align: center;
-        padding-top: 80px;
+    .left {
+        flex-direction: column;
+        width: 40%;
+
+        .headings {
+            justify-content: center;
+            margin-top: 100px;
+
+            h3{
+                margin-left: 100px;
+            }
+        }
+        .areYouMember {
+            margin-top: 50px;
+
+            .noMember {
+                flex-direction: column;
+                // align-content: center;
+                align-content: center;
+            }
+
+            .yesMember {
+                margin-top: 20px;
+                display: flex;
+            }
+        }
     }
-    .yesMember {
-        height: 200px;
-        width: 300px;
-        background-color: #d4a373;
-        text-align: center;
-        padding-top: 80px;
+
+    .right {
+        position: relative;
+        width: 70%;
+        // height: 800px;
+
+        .idea {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #A3CEF1;
+            padding: 20px;
+            border-radius: 20px;
+            height: 300px;
+            width: 500px;
+            border: 2px solid #274C77;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .expertise {
+            position: absolute;
+            top: 220px;
+            left: 380px;
+            background-color: #E7ECEF;
+            // color: white;
+            padding: 20px;
+            border-radius: 20px;
+            height: 300px;
+            width: 500px;
+            border: 2px solid #274C77;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .payMembership {
+            position: absolute;
+            top: 450px;
+            left: 80px;
+            background-color: #A3CEF1;
+            padding: 20px;
+            border-radius: 20px;
+            height: 300px;
+            width: 500px;
+            border: 2px solid #274C77;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     }
 }
+
+button {
+    background: #fff;
+    border: none;
+    padding: 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    width: 140px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.362);
+    margin-right: 5px;
+}
+span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #A3CEF1;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+

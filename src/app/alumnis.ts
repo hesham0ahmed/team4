@@ -4,37 +4,37 @@ export const alumnis = [
         photo: 'assets/alumni/martin_small.jpg',
         career: 'Full Stack Developer',
         text: 'Martin, a CSS alumni, has achieved remarkable success in the field of web design, earning accolades for his visually stunning and user-friendly interfaces. His innovative approach to CSS animations and responsive layouts has garnered industry recognition and led to impactful digital experiences for renowned brands worldwide.',
-        achievements: '100%'
+        achievements: '98%'
 
     }, {
         name: 'Rose Carmen',
         photo: 'assets/alumni/rose_small.jpg',
-        career: 'Full Stack Developer',
+        career: 'Front End Developer',
         text: 'Rose, a CSS alumni, has achieved remarkable success in the field of web design, earning accolades for his visually stunning and user-friendly interfaces. His innovative approach to CSS animations and responsive layouts has garnered industry recognition and led to impactful digital experiences for renowned brands worldwide.',
-        achievements: '100%'
+        achievements: '90%'
     }, {
         name: 'Karla Numeri',
         photo: 'assets/alumni/karla_small.jpg',
-        career: 'Full Stack Developer',
+        career: 'Back End Developer',
         text: 'Karla, a CSS alumni, has achieved remarkable success in the field of web design, earning accolades for his visually stunning and user-friendly interfaces. His innovative approach to CSS animations and responsive layouts has garnered industry recognition and led to impactful digital experiences for renowned brands worldwide.',
-        achievements: '100%'
+        achievements: '88%'
     }, {
         name: 'Elisabeth Smile',
         photo: 'assets/alumni/elisabeth_small.jpg',
-        career: 'Full Stack Developer',
+        career: 'Web Developer',
         text: 'Elisabeth, a CSS alumni, has achieved remarkable success in the field of web design, earning accolades for his visually stunning and user-friendly interfaces. His innovative approach to CSS animations and responsive layouts has garnered industry recognition and led to impactful digital experiences for renowned brands worldwide.',
-        achievements: '100%'
+        achievements: '82%'
     }, {
         name: 'Jonathan Malawi',
         photo: 'assets/alumni/jonathan_small.jpg',
-        career: 'Full Stack Developer',
+        career: 'App Developer',
         text: 'Jonathan, a CSS alumni, has achieved remarkable success in the field of web design, earning accolades for his visually stunning and user-friendly interfaces. His innovative approach to CSS animations and responsive layouts has garnered industry recognition and led to impactful digital experiences for renowned brands worldwide.',
-        achievements: '100%'
+        achievements: '92%'
     }, {
-        name: 'Tariq Wimmer',
+        name: 'Tarek Wimmer',
         photo: 'assets/alumni/tariq_small.jpg',
-        career: 'Full Stack Developer',
-        text: 'Tariq, a CSS alumni, has achieved remarkable success in the field of web design, earning accolades for his visually stunning and user-friendly interfaces. His innovative approach to CSS animations and responsive layouts has garnered industry recognition and led to impactful digital experiences for renowned brands worldwide.',
-        achievements: '100%'
+        career: 'JavaScript Developer',
+        text: 'Tarek, a CSS alumni, has achieved remarkable success in the field of web design, earning accolades for his visually stunning and user-friendly interfaces. His innovative approach to CSS animations and responsive layouts has garnered industry recognition and led to impactful digital experiences for renowned brands worldwide.',
+        achievements: '80%'
     },
 ]

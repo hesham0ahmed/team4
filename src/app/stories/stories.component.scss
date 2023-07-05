@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
 .slide {
     margin: 0;
     padding: 0;
@@ -18,10 +20,12 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: black;
-    font-size: 60px;
+    font-size: 70px;
+    text-shadow: 3px 3px 3px #6096BA;
     letter-spacing: 4px;
     z-index: 1;
     transition: 0.5s ease;
+    font-family: 'Dancing Script', cursive;
 
     &:hover {
         color: #6096BA;
@@ -40,6 +44,8 @@ img {
 h2 {
     font-size: 40px;
     transition: 1s ease;
+
+
 
     &:hover {
         color: #6096BA;
@@ -101,4 +107,11 @@ p {
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 15px;
     transform: translate(0%, -30%);
+}
+
+.marquee {
+    color: #6096BA;
+    font-size: 26px;
+    text-shadow: 2px 2px 2px black;
+
 }
