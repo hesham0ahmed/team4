@@ -4,4 +4,5 @@ export interface Ialumnis {
     career: string;
     text: string;
     achievements: string;
+    hovered: boolean;
 }

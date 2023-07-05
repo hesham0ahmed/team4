@@ -16,7 +16,10 @@ export class AlumniDirectoryComponent implements OnInit {
   constructor(private alumniService: AlumniService) { }
 
   ngOnInit() {
-    this.alumniData = this.alumniService.getAlumniData();
+    this.alumniData = this.alumniService.getAlumniData().map(alumni => ({
+      ...alumni,
+      hovered: false,
+    }));
   }
 
   showDetails(alumni: Ialumnis) {

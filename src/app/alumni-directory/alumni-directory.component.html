@@ -2,15 +2,17 @@
     <div class="container">
         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
             <div class="" *ngFor="let alumni of alumniData">
+
                 <div class="card mb-6">
                     <div>
                         <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
-                        <div class="overlay">I am {{alumni.name}} and I am<br>a student at Alumnifactory</div>
+                        <div class="overlay" *ngIf="alumni.hovered">Hi,I'm {{alumni.name}} and<br>I am a student at
+                            Alumnifactory</div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" (mouseenter)="alumni.hovered = true" (mouseleave)="alumni.hovered = false">
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <div class="d-flex justify-content-between">
-                            <button class="btn" (click)="showDetails(alumni)">Achievment</button>
+                            <button class="btn" (click)="showDetails(alumni)">Achievement</button>
                             <a class="btn btn-secondary" routerLink="/stories">Stories</a>
                         </div>
                     </div>
@@ -29,10 +31,31 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img [src]="selectedAlumni.photo" class="" alt="Alumni Photo">
-                    <p id="p_1">Achievements:<br> {{ selectedAlumni.text }}</p>
-                    <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
-                    <p id="modal-text">Score: {{ selectedAlumni.achievements }}</p>
+                    <div><img [src]="selectedAlumni.photo" class="" alt="Alumni Photo"></div>
+                    <div class="">
+                        <div class="about-info skill-thumb">
+
+                            <strong>Front End </strong>
+                            <span class="pull-right">{{ selectedAlumni.achievements }}%</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                            </div>
+
+                            <strong>Back End </strong>
+                            <span class="pull-right">{{ selectedAlumni.achievements }}%</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <p id="p_1">Achievements:<br> {{ selectedAlumni.text }}</p>
+                        <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
+                        <p id="modal-text">Total Score: {{ selectedAlumni.achievements }}%</p>
+                    </div>
                 </div>
             </div>
         </div>
