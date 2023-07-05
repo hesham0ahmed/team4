@@ -3,8 +3,8 @@ import { IMerge } from "./IMerge";
 export const Merge : IMerge[] = [
     {
         name : "Tshirt" , 
-        price : 23,
-        xprice: 13,
+        price : 15,
+        xprice: 5,
         available : false ,
         photo : "Merge/Merge-1-tshirt.jpg" ,
         description : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor delectus facere minus."
@@ -20,7 +20,6 @@ export const Merge : IMerge[] = [
         name : "Pen" , 
         price : 60,
         xprice: 30 , 
-        available : false ,
         photo : "Merge/Merge-3-pen.jpg" ,
         description : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor delectus facere minus."
     } ,
@@ -35,6 +34,7 @@ export const Merge : IMerge[] = [
         name : "Teddy Bear" , 
         price : 23,
         xprice: 13 ,
+        available : false ,
         photo : "Merge/merge-5-teddybear.jpg" ,
         description : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor delectus facere minus."
 

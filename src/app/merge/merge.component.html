@@ -17,13 +17,18 @@
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">{{item.name}}</h5>
+                      <h5 class="card-title red">
+                        <div *ngIf="item.available == false">
+                            Not Available!!
+                        </div>
+                      </h5>
                       <div *ngIf="(id != id_detail)" >
                         <button class="btn btn-primary" routerLink="/merge/{{id}}">Show Detail</button>
                       </div>
                       <div *ngIf="(id == id_detail)" id="current">
                         <button class="btn btn-primary" routerLink="/merge">Hide Detail</button>
-                        <h5 class="card-title">normal price : {{item.price}}</h5>
-                        <h5 class="card-title">member price : {{item.xprice}}</h5>
+                        <h5 class="card-title">normal price : {{item.price | currency}}</h5>
+                        <h5 class="card-title">member price : {{item.xprice | currency}}</h5>
                         <p class="card-text" >
                             {{item.description}}
                         </p>
