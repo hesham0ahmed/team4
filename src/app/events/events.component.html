@@ -16,7 +16,9 @@
         <div *ngFor="let item of events_arr index as id" >
 
             <div class="card" style="width: 18rem;">
-                <img src="/assets/images/{{item.photo}}" class="card-img-top" >
+                <a (click)="show(id)" >
+                    <img src="/assets/images/{{item.photo}}" class="card-img-top" title="Click for full photo" >
+                </a>
                 <div class="card-body">
                   <h5 class="card-title">{{item.title}}</h5>
                   <h5 class="card-title">{{item.date}}</h5>
