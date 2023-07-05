@@ -1,13 +1,15 @@
-// *, ::after , ::before {
+ *, ::after , ::before {
 //     padding: 0;
 //     margin: 0;
-//     box-sizing: border-box;
-// }
+    box-sizing: border-box;
+ }
 
 
 .container {
     margin:auto;
     text-align: center;
+    width: 100%;
+    background-color: #274C77;
 }
 
 .container > .img_hero {
@@ -15,7 +17,7 @@
 }
 
 .container > .title {
-    color : #58595b;
+    color : #E7ECEF;
     margin: 20px;
 }
 
@@ -49,6 +51,7 @@
     .card {
         margin-bottom: 40px;
         margin-left: 0;
+        background-color: #A3CEF1;
     }
 
   
