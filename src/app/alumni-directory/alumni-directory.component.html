@@ -36,14 +36,14 @@
                         <div class="about-info skill-thumb">
 
                             <strong>Front End </strong>
-                            <span class="pull-right"> 90%</span>
+                            <span class="pull-right">{{ selectedAlumni.achievements }}%</span>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90"
                                     aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                             </div>
 
                             <strong>Back End </strong>
-                            <span class="pull-right"> 90%</span>
+                            <span class="pull-right">{{ selectedAlumni.achievements }}%</span>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90"
                                     aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
@@ -54,7 +54,7 @@
                     <div>
                         <p id="p_1">Achievements:<br> {{ selectedAlumni.text }}</p>
                         <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
-                        <p id="modal-text">Score: {{ selectedAlumni.achievements }}</p>
+                        <p id="modal-text">Score: {{ selectedAlumni.achievements }}%</p>
                     </div>
                 </div>
             </div>
