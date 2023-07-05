@@ -10,7 +10,7 @@
 
         .headings {
             justify-content: center;
-            margin-top: 100px;
+            margin-top: 70px;
 
             h3{
                 margin-left: 100px;
@@ -41,6 +41,17 @@
                 }
 
             }
+
+            .contactUs {
+                margin-top: 50px;
+
+                p {
+                    margin-left: 90px;
+                }
+                button {
+                    margin-left: 60px;
+                }
+            }
         }
     }
 
@@ -58,8 +69,12 @@
             border-radius: 20px;
             height: 300px;
             width: 500px;
-            border: 2px solid #274C77;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+            h5 {
+                padding-bottom: 10px;
+            }
+        
         }
         .image {
             position: absolute;
@@ -74,7 +89,7 @@
 
         .expertise {
             position: absolute;
-            top: 220px;
+            top: 240px;
             left: 300px;
             background-color: #E7ECEF;
             // color: white;
@@ -82,20 +97,26 @@
             border-radius: 20px;
             height: 300px;
             width: 500px;
-            border: 2px solid #274C77;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+            h5 {
+                padding-bottom: 10px;
+            }
         }
         .payMembership {
             position: absolute;
-            top: 450px;
+            top: 470px;
             left: 80px;
             background-color: #A3CEF1;
             padding: 20px;
             border-radius: 20px;
             height: 250px;
             width: 500px;
-            border: 2px solid #274C77;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+            h5 {
+                padding-bottom: 10px;
+            }
         }
     }
 }
