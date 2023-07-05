@@ -5,12 +5,13 @@
                 <div class="card mb-6">
                     <div>
                         <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
-                        <div class="overlay">I am {{alumni.name}} and I am<br>a student at Alumnifactory</div>
+                        <div class="overlay" *ngIf="alumni.hovered">I am {{alumni.name}} and I am<br>a student at
+                            Alumnifactory</div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" (mouseenter)="alumni.hovered = true" (mouseleave)="alumni.hovered = false">
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <div class="d-flex justify-content-between">
-                            <button class="btn" (click)="showDetails(alumni)">Achievment</button>
+                            <button class="btn" (click)="showDetails(alumni)">Achievement</button>
                             <a class="btn btn-secondary" routerLink="/stories">Stories</a>
                         </div>
                     </div>
