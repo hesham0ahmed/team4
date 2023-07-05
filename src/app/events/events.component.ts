@@ -30,7 +30,7 @@ export class EventsComponent implements OnInit{
       <div class="card" style="width: 22rem;">
       <div class="card-body">
         <h5 class="card-title">${item.title}</h5>
-          <h5 class="card-title">normal price : ${item.date}$</h5>
+          <h5 class="card-title">${item.date}</h5>
           <p class="card-text" >
               ${item.description}
           </p>
