@@ -110,12 +110,14 @@ p {
 }
 
 .marquee {
-    color: #6096BA;
+    color: black;
+    font-family: 'Dancing Script', cursive;
     font-size: 26px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px #6096BA;
+    transition: 1s ease;
 
     &:hover {
-        font-size: 28px;
+        font-size: 30px;
         color: black;
         font-family: 'Dancing Script', cursive;
         text-shadow: 2px 2px 2px #6096BA;
