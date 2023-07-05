@@ -8,7 +8,7 @@
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <div class="d-flex justify-content-between">
                             <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
-                            <a class="btn btn-secondary" routerLink="/stories">Story</a>
+                            <a class="btn btn-secondary" routerLink="/stories">Stories</a>
                         </div>
                     </div>
                 </div>
@@ -26,9 +26,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img [src]="selectedAlumni.photo" class="img-fluid" alt="Alumni Photo">
+                    <img [src]="selectedAlumni.photo" class="" alt="Alumni Photo">
+                    <p>Achievements: {{ selectedAlumni.text }}</p>
                     <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
-                    <p id="modal-text">Achievements: {{ selectedAlumni.achievements }}</p>
+                    <p id="modal-text">Score: {{ selectedAlumni.achievements }}</p>
                 </div>
             </div>
         </div>
