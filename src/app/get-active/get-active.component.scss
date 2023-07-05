@@ -2,7 +2,7 @@
 .content {
     display: flex;
     justify-content: space-around;
-    margin: 80px 80px 400px 80px;
+    margin: 80px 80px 300px 80px;
 
     .left {
         flex-direction: column;
@@ -17,17 +17,29 @@
             }
         }
         .areYouMember {
-            margin-top: 50px;
+            margin-top: 80px;
 
             .noMember {
-                flex-direction: column;
-                // align-content: center;
-                align-content: center;
+                p {
+                    margin-left: 90px;
+                }
+                button {
+                    margin-left: 60px;
+                }
+
             }
 
             .yesMember {
-                margin-top: 20px;
-                display: flex;
+                margin-top: 50px;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                button {
+                    margin-left: 60px;
+                }
+
             }
         }
     }
@@ -49,10 +61,21 @@
             border: 2px solid #274C77;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+        .image {
+            position: absolute;
+            top: 250px;
+            left: -100px;  
+            
+            img {
+                border-radius: 50%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+
         .expertise {
             position: absolute;
             top: 220px;
-            left: 380px;
+            left: 300px;
             background-color: #E7ECEF;
             // color: white;
             padding: 20px;
@@ -69,7 +92,7 @@
             background-color: #A3CEF1;
             padding: 20px;
             border-radius: 20px;
-            height: 300px;
+            height: 250px;
             width: 500px;
             border: 2px solid #274C77;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -78,13 +101,13 @@
 }
 
 button {
-    background: #fff;
+    background: #A3CEF1;
     border: none;
     padding: 5px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
-    width: 140px;
+    width: 190px;
     text-transform: uppercase;
     cursor: pointer;
     transform: skew(-21deg);
@@ -102,14 +125,14 @@ button::before {
     bottom: 0;
     right: 100%;
     left: 0;
-    background: #A3CEF1;
+    background: #E7ECEF;
     opacity: 0;
     z-index: -1;
     transition: all 0.5s;
   }
   
   button:hover {
-    color: #fff;
+    color: black;
   }
   
   button:hover::before {

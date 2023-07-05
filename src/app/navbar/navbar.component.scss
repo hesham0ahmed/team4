@@ -203,7 +203,7 @@
 .button03::before {
   background-color: transparent;
   content: "A";
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 700;
   color: white;
   z-index: 5;
@@ -231,7 +231,7 @@
 
 .button03:hover::after {
   opacity: 1;
-  font-size: 1.6em;
+  font-size: 1em;
   transform: translateX(0px);
 }
 

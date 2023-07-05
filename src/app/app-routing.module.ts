@@ -17,6 +17,7 @@ import { MembershipFormComponent } from './membership-form/membership-form.compo
 import { RenewDataComponent } from './renew-data/renew-data.component';
 import { StoriesComponent } from './stories/stories.component';
 import { MergeComponent } from './merge/merge.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -65,6 +66,9 @@ const routes: Routes = [
     path: "events/:idDetail", component: EventsComponent
   }, {
     path: "merge/:idDetail", component: MergeComponent
+  },
+  {
+    path: "contact", component: ContactComponent
   }
 
 
