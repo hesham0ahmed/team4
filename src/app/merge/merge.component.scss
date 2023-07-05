@@ -1,8 +1,9 @@
-*, ::after , ::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+// *, ::after , ::before {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+
 .container {
     margin:auto;
     text-align: center;
@@ -23,7 +24,9 @@
     line-height: 1.8;
     color: #333;
     margin:auto;
+    text-align: center;
     max-width: 1000px;
+    
 
     p {
         text-align: justify;
@@ -34,4 +37,19 @@
         display: flex;
         margin-top: 30px;
     }
+
+    .card-img-top {
+        width: 100%;
+        height: 19vw;
+        object-fit: cover;
+      
+    }
+
+    .card {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+  
+   
 }

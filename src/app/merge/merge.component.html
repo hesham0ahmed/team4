@@ -7,24 +7,34 @@
     </div>
     <div class="content">
         
-        <div class="row row-cols-lg-2 row-cols-md-1">
-<!--
-        <div *ngFor="let item of alumni_arr index as id">
-
-             <div class="card" style="width: 26rem;">
-                <img class="card-img-top" src="/{{item.photo}}" >
-                <div class="card-body">
-                  <h5 class="card-title">{{item.name}}</h5>
-                  <p class="card-text">Career: {{item.career}}</p>
-                  <p class="card-text">Achievements: {{item.achievements}}</p>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            <div *ngFor="let item of events_arr index as id" >
+    
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/images/{{item.photo}}" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name}}</h5>
+                      <div *ngIf="(id != id_detail)" >
+                        <button class="btn btn-primary" routerLink="/merge/{{id}}">Show Detail</button>
+                      </div>
+                      <div *ngIf="(id == id_detail)" id="current">
+                        <button class="btn btn-primary" routerLink="/merge">Hide Detail</button>
+                        <h5 class="card-title">normal price : {{item.price}}</h5>
+                        <h5 class="card-title">member price : {{item.xprice}}</h5>
+                        <p class="card-text" >
+                            {{item.description}}
+                        </p>
+                      </div>
+                    </div>
                 </div>
+    
+                
             </div>
-
-        </div> -->
-        
+            </div>
         </div>
         
     </div>
+    
 
 
 
