@@ -5,20 +5,25 @@
  }
 
 
-.container {
-    margin:auto;
+ .container {
+//     margin:auto;
     text-align: center;
-    width: 100%;
-    background-color: #274C77;
-}
+//     width: 100%;
+//     background-color: #274C77;
+    padding: 0;
+     margin: 0;
+ }
 
-.container > .img_hero {
-    text-align: center;
-}
-
+// .container , .img_hero {
+//     text-align: center;
+   
+// }
+ img {
+       background-size: cover;
+    }
 .container > .title {
     color : #E7ECEF;
-    margin: 20px;
+    // margin: 20px;
 }
 
 .container > .content {
