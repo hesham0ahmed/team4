@@ -7,16 +7,10 @@
     <div class="text">
         STORIES
     </div>
-    <!--  <div class="arrow">
-        <a href="#" onclick="scrollToBottom()">
-            <svg id="arrow" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
-                <path
-                    d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-            </svg>
-        </a>
-    </div> -->
+
 </div>
 <!-- --------------------------------Another section slideshow ----------------------------------------------------------- -->
+
 
 
 
@@ -109,6 +103,24 @@
             <span class="visually-hidden">Next</span>
         </button>
 
+    </div>
+</div>
+
+<div class="modal" *ngIf="selectedAlumni">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">{{ selectedAlumni.name }}</h3>
+                <button type="button" class="close" (click)="selectedAlumni = null">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img [src]="selectedAlumni.photo" class="img-fluid" alt="Alumni Photo">
+                <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
+                <p id="modal-text">Achievements: {{ selectedAlumni.achievements }}</p>
+            </div>
+        </div>
     </div>
 </div>
 

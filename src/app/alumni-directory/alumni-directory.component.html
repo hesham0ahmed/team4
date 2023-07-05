@@ -26,9 +26,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img [src]="selectedAlumni.photo" class="img-fluid" alt="Alumni Photo">
+                    <img [src]="selectedAlumni.photo" class="img-fluid" alt="Alumni Photo"
+                        style="width: 30px; height: 40px;">
+                    <p>Achievements: {{ selectedAlumni.text }}</p>
                     <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
-                    <p id="modal-text">Achievements: {{ selectedAlumni.achievements }}</p>
+                    <p id="modal-text">Score: {{ selectedAlumni.achievements }}</p>
                 </div>
             </div>
         </div>
