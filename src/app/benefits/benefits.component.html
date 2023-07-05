@@ -1,22 +1,27 @@
 <!-- <p>benefits works!</p> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <h2>Exclusive benefits for our alumni-network members</h2>
 
+
 <div class="containerBenefits">
-    <div *ngFor = "let benefit of benefits">
-        <div class="card myCard">
-            <img id="imgMenu" src="{{benefit.photo}}" class="card-img-top myImage" alt="pizza">
-            <div class="card-body">
-                <div class="card-body">
-                    <h5 class="card-title">{{benefit.title}}</h5>
-                    <p class="card-text">benefit: {{benefit.benefit}} %</p>
-                    <hr>
-                    <p class="card-text">{{benefit.description}}</p>
-                    <hr>
-                </div>
-            </div>
+    <div class="flip-card" *ngFor = "let benefit of benefits">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="{{benefit.photo}}" class="myImage" alt="" style="width:250px;height:170px;">
+            <h5>{{benefit.title}}</h5>
+            <p>benefit: {{benefit.benefit}} %</p>
+            <hr>
+            <p>{{benefit.description}}</p>
+            <hr>
+        </div>
+        <div class="flip-card-back">
+            <p class="pCard">have fun</p>
+            <p class="fa fa-heart fa-2x"></p>
+        </div>
         </div>
     </div>
 </div>
+
 
 <h4>...and more to come!</h4>

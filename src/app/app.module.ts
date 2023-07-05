@@ -24,6 +24,7 @@ import { DetailsComponent } from './details/details.component';
 import { RenewDataComponent } from './renew-data/renew-data.component';
 import { MergeComponent } from './merge/merge.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     DetailsComponent,
     RenewDataComponent,
     MergeComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

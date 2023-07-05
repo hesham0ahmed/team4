@@ -1,45 +1,42 @@
-
-
-
+<div class="imgCover">
+    <img src="./assets/images/Events/main.jpg" alt="">
+</div>
 <div class="container">
-    <div class="img_hero">
-        <img src="../assets/images/Events/main.jpg" alt="">
-    </div>
-    <div class="title">
+
+    <div class="title text-center">
         <h1>Upcoming Events</h1>
     </div>
     <div class="content">
 
-                
+
 
         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
-        <div *ngFor="let item of events_arr index as id" >
+            <div *ngFor="let item of events_arr index as id">
 
-            <div class="card" style="width: 18rem;">
-                <a (click)="show(id)" >
-                    <img src="/assets/images/{{item.photo}}" class="card-img-top" title="Click for full photo" >
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">{{item.title}}</h5>
-                  <h5 class="card-title">{{item.date}}</h5>
-                  <div *ngIf="(id != id_detail)" >
-                    <button class="btn btn-primary" routerLink="/events/{{id}}">Show Detail</button>
-                  </div>
-                  <div *ngIf="(id == id_detail)" id="current">
-                    <button class="btn btn-primary" routerLink="/events">Hide Detail</button>
-                    <p class="card-text" >
-                        {{item.description}}
-                    </p>
-                  </div>
+                <div class="card" style="width: 18rem;">
+                    <a (click)="show(id)">
+                        <img src="/assets/images/{{item.photo}}" class="card-img-top" title="Click for full photo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.title}}</h5>
+                        <h5 class="card-title">{{item.date}}</h5>
+                        <div *ngIf="(id != id_detail)">
+                            <button class="btn btn-primary" routerLink="/events/{{id}}">Show Detail</button>
+                        </div>
+                        <div *ngIf="(id == id_detail)" id="current">
+                            <button class="btn btn-primary" routerLink="/events">Hide Detail</button>
+                            <p class="card-text">
+                                {{item.description}}
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            
-        </div>
+
+            </div>
         </div>
     </div>
 </div>
-
 
 
 

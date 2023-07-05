@@ -5,19 +5,19 @@
      }
     
     
-    .container {
-        margin:auto;
-        text-align: center;
+     .imgCover {
         width: 100%;
-        background-color: #274C77;
+        overflow: hidden;
     }
-    
-    .container > .img_hero {
-        text-align: center;
+   
+    .imgCover img {
+        width: 100%;
+        height: auto;
     }
+   
     
     .container > .title {
-        color : #E7ECEF;
+        color: #414141;
         margin: 20px;
     }
     
