@@ -32,7 +32,7 @@
 }
 
 .modal-content {
-    background-color: #E7ECEF;
+    background-color: #A3CEF1;
     border-radius: 15px;
     padding: 5px;
     text-align: left;
@@ -41,12 +41,12 @@
 
 .modal-body {
     /* background: linear-gradient(to bottom, #87cefa, #1e90ff); */
-    background-color: #E7ECEF;
+    background-color: #A3CEF1;
 }
 
 .modal-body img {
-    width: 100px;
-    height: 140px;
+    width: 140px;
+    height: 160px;
     display: flex;
     justify-content: flex-start;
     border: 1px solid gray;
@@ -55,10 +55,10 @@
 
 
 #modal-text {
-    font-size: 20px;
+    font-size: 22px;
 
     &:hover {
-        text-shadow: 3px 3px 3px white;
+        text-shadow: 2px 2px 2px white;
     }
 }
 
@@ -68,7 +68,7 @@
 
     &:hover {
         font-size: 30px;
-        text-shadow: 3px 3px 3px #1e90ff;
+        text-shadow: 3px 3px 3px white;
     }
 }
 
@@ -79,4 +79,28 @@ section {
 #p_1 {
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &:hover {
+        text-shadow: 2px 2px 2px white;
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 110px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
 }

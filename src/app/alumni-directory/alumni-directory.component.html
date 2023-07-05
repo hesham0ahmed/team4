@@ -3,7 +3,10 @@
         <div class="row">
             <div class="col-md-4" *ngFor="let alumni of alumniData">
                 <div class="card mb-6">
-                    <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
+                    <div>
+                        <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
+                        <div class="overlay">I am {{alumni.name}} and I am<br>a student at Alumni4c </div>
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <div class="d-flex justify-content-between">
