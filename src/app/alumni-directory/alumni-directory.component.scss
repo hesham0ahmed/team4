@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 9999;
     position: fixed;
     top: 0;
@@ -20,15 +20,17 @@
 }
 
 .modal-dialog {
-    max-width: 500px;
+    max-width: 600px;
+    max-height: 800px;
 
 }
 
 .modal-content {
     background-color: #E7ECEF;
     border-radius: 15px;
-    padding: 20px;
-    text-align: center;
+    padding: 5px;
+    text-align: left;
+    font-size: 22px;
 }
 
 .modal-body {
@@ -36,15 +38,14 @@
 }
 
 .modal-body img {
-    width: 80px;
-    height: 120px;
+    width: 100px;
+    height: 140px;
     display: flex;
     justify-content: flex-start;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px black;
 }
 
-.img-fluid {
-    margin-bottom: 15px;
-}
 
 #modal-text {
     font-size: 20px;
@@ -66,4 +67,9 @@
 
 section {
     background-color: #E7ECEF;
+}
+
+#p_1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
