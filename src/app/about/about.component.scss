@@ -1,3 +1,44 @@
+// additional Characters
 #star {
   color: yellow;
 }
+
+.pointer {
+  cursor: pointer;
+}
+// about
+
+// .fullAbout {
+//   height: 700px;
+// }
+.mainAbout {
+  height: 150px;
+}
+
+// TeamSection
+.teamBackground {
+  background-color: rgb(4, 4, 44);
+}
+
+.cardBackground {
+  background-color: rgb(4, 4, 44);
+}
+
+// LoungeSection
+#headImg {
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/14/11/30/blockchain-2850276_1280.jpg);
+  height: 350px;
+  display: flex;
+  position: relative;
+}
+
+#headText {
+  background: rgb(171, 171, 176);
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 190px;
+  top: 35%;
+}
+
+// carousel
