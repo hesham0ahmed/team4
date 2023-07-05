@@ -1,6 +1,6 @@
 h2 {
-    text-align: center;
     margin-top: 80px;
+    margin-left: 80px;
 }
 
 .mentoring {
@@ -8,7 +8,57 @@ h2 {
     margin: 80px;
 
     #mentoringP {
-        padding-top: 50px;
-        padding-left: 50px;
+        padding-top: 40px;
+        padding-left: 100px;
     }
 }
+.contact {
+margin-left: 590px; 
+margin-bottom: 100px;
+margin-top: 50px;
+display: flex;
+gap: 50px;
+}
+
+button {
+    background: #A3CEF1;
+    border: none;
+    padding: 5px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    width: 190px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.362);
+    margin-right: 5px;
+}
+span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #E7ECEF;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: black;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+

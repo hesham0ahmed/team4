@@ -1,14 +1,17 @@
 <section>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4" *ngFor="let alumni of alumniData">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            <div class="" *ngFor="let alumni of alumniData">
                 <div class="card mb-6">
-                    <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
+                    <div>
+                        <img [src]="alumni.photo" class="card-img-top" alt="Alumni Photo">
+                        <div class="overlay">I am {{alumni.name}} and I am<br>a student at Alumnifactory</div>
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">{{ alumni.name }}</h3>
                         <div class="d-flex justify-content-between">
-                            <button class="btn btn-primary" (click)="showDetails(alumni)">More info</button>
-                            <a class="btn btn-secondary" routerLink="/stories">Story</a>
+                            <button class="btn" (click)="showDetails(alumni)">Achievment</button>
+                            <a class="btn btn-secondary" routerLink="/stories">Stories</a>
                         </div>
                     </div>
                 </div>
@@ -26,9 +29,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img [src]="selectedAlumni.photo" class="img-fluid" alt="Alumni Photo">
+                    <img [src]="selectedAlumni.photo" class="" alt="Alumni Photo">
+                    <p id="p_1">Achievements:<br> {{ selectedAlumni.text }}</p>
                     <p id="modal-text">Career: {{ selectedAlumni.career }}</p>
-                    <p id="modal-text">Achievements: {{ selectedAlumni.achievements }}</p>
+                    <p id="modal-text">Score: {{ selectedAlumni.achievements }}</p>
                 </div>
             </div>
         </div>

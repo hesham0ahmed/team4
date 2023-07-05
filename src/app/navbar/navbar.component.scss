@@ -53,3 +53,188 @@
   }
 
 }
+
+// BUTTON LOGO
+
+// .container02 {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   width: 200px;
+// }
+
+// .container02 .btn {
+//   height: 50px;
+//   // margin: 20px;
+//   // margin-bottom: 40px;
+//   position: relative;
+//   width: 155px;
+// }
+
+// .container02 .btn a {
+//   align-items: center;
+//   background: rgba(255, 255, 255, 0.05);
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+//   border-top: 1px solid rgba(255, 255, 255, 0.1);
+//   border-radius: 30px;
+//   box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+//   color: #fff;
+//   display: flex;
+//   font-size: 18px;
+//   font-weight: 700;
+//   left: 0;
+//   top: 0;
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   justify-content: center;
+//   letter-spacing: 1px;
+//   text-decoration: none;
+//   overflow: hidden;
+//   -webkit-backdrop-filter: blur(10px);
+//   backdrop-filter: blur(15px);
+//   z-index: 1;
+//   transition: 0.5s;
+// }
+
+// .container02 .btn:hover a {
+//   letter-spacing: 2px;
+
+// }
+
+// .container02 .btn a::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 50%;
+//   height: 100%;
+//   background: linear-gradient(to left,
+//       rgba(255, 255, 255, 0.15),
+//       transparent);
+//   transform: skewX(45deg) translateX(0);
+//   transition: 0.5s;
+// }
+
+// .container02 .btn:hover a::before {
+//   transform: skewX(45deg) translateX(200%);
+// }
+
+// .container02 .btn::before {
+//   content: '';
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   bottom: -5px;
+//   height: 10px;
+//   width: 30px;
+//   background: rgb(8, 107, 183);
+//   border-radius: 10px;
+//   transition: 0.5s;
+//   transition-delay: 0s;
+// }
+
+// .container02 .btn:hover::before {
+//   bottom: 0;
+//   height: 50%;
+//   width: 80%;
+//   border-radius: 30px;
+//   transition-delay: 0.5s;
+// }
+
+// .container02 .btn::after {
+//   content: '';
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   top: -5px;
+//   height: 10px;
+//   width: 30px;
+//   background: rgb(7, 95, 189);
+//   border-radius: 10px;
+//   transition: 0.5s;
+//   transition-delay: 0s;
+// }
+
+// .container02 .btn:hover::after {
+//   top: 0;
+//   height: 50%;
+//   width: 80%;
+//   border-radius: 30px;
+//   transition-delay: 0.5s;
+// }
+
+// .container02 .btn:nth-child(1):before,
+// .container02 .btn:nth-child(1)::after {
+//   background: #2bd2ff;
+//   box-shadow: 0 0 5px #2bd2ff,
+//     0 0 15px #2bd2ff,
+//     0 0 30px #2bd2ff,
+//     0 0 60px #2bd2ff;
+// }
+
+// .container02 .btn:active a {
+//   color: #000;
+// }
+
+
+// LOGO NAVBAR
+
+.button03 {
+  width: 45px;
+  height: 45px;
+  background-color: #3b5998;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+    0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+    0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.button03::before {
+  background-color: transparent;
+  content: "A";
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
+  z-index: 5;
+  transition: all .3s;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.button03::after {
+  content: "lumniFactory";
+  background-color: transparent;
+  font-size: 0;
+  opacity: 0;
+  font-weight: 700;
+  color: white;
+  z-index: 5;
+  transition: all .3s;
+  transform: translateX(60px);
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.button03:hover {
+  width: 160px;
+  border-radius: 30px;
+}
+
+.button03:hover::after {
+  opacity: 1;
+  font-size: 1em;
+  transform: translateX(0px);
+}
+
+.button03:hover .shine {
+  transform: translate(-70px, 10px);
+}

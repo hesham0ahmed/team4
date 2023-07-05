@@ -1,15 +1,16 @@
 *, ::after , ::before {
-    padding: 0;
-    margin: 0;
+    //padding: 0;
+    //margin: 0;
     box-sizing: border-box;
 }
-.container {
-    margin:auto;
-    text-align: center;
+.imgCover {
+    width: 100%;
+    overflow: hidden;
 }
 
-.container > .img_hero {
-    text-align: center;
+.imgCover img {
+    width: 100%;
+    height: auto;
 }
 
 .container > .title {

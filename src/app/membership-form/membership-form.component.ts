@@ -8,6 +8,23 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class MembershipFormComponent {
 
+  constructor(){
+    function createCompareValidator(controlOne: any, controlTwo: any) {
+      return () => {
+        if (controlOne.value !== controlTwo.value)
+          return { match_error: 'Value does not match' };
+        return null;
+      }; 
+    }
+
+    this.members.addValidators(
+      createCompareValidator(
+        this.members.get('password'),
+        this.members.get('passwordcheck')
+      )
+     );
+  }
+
     members = new FormGroup({
     name: new FormControl('', Validators.required),
     birthday: new FormControl('', Validators.required),
@@ -35,5 +52,7 @@ export class MembershipFormComponent {
     }
     
   }
+
+  
 
 }

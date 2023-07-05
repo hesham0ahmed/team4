@@ -11,15 +11,15 @@
     <label class="myLabel required">Full name: </label>
     <input class="myEntry" type="text" formControlName="name">
     <p class="errorInfo" *ngIf="members.invalid && members.touched">
-      <span *ngIf="members.controls.name.errors?.['required']">name can't be empty</span>
+      <span *ngIf="members.controls.name.errors?.['required']">name required</span>
     </p>
   </div>
   
   <div class="formEntry">
     <label class="myLabel required">Birthday:</label>
-    <input type="date" id="birthday" name="birthday">
+    <input type="date" id="birthday" formControlName="birthday">
     <p *ngIf="members.invalid && members.touched">
-      <span *ngIf="members.controls.birthday.errors?.['required']">birthday can't be empty</span>
+      <span *ngIf="members.controls.birthday.errors?.['required']">birthday required</span>
     </p>
   </div>
 
@@ -42,7 +42,7 @@
     <label class="myLabel required">Address (street + number):  </label>
     <input class="myEntry" type="text" formControlName="address">
     <p *ngIf="members.invalid && members.touched">
-      <span *ngIf="members.controls.address.errors?.['required']">address can't be empty</span>
+      <span *ngIf="members.controls.address.errors?.['required']">we need your address!</span>
     </p>
   </div>
 
@@ -50,14 +50,14 @@
     <label class="myLabel required">City and postal code:  </label>
     <input class="myEntry" type="text" formControlName="city">
     <p *ngIf="members.invalid && members.touched">
-      <span *ngIf="members.controls.city.errors?.['required']">city and postal code can't be empty</span>
+      <span *ngIf="members.controls.city.errors?.['required']">where do you live?</span>
     </p>
   </div>
 
   <div class="formEntry">
     <label class="myLabel required">Select country:  </label>
-    <select class="myEntry" id="country" name="country">
-        <option>select country</option>
+    <select class="myEntry" id="country" formControlName="country">
+        <option></option>
         <option value="AF">Afghanistan</option>
         <option value="AX">Aland Islands</option>
         <option value="AL">Albania</option>
@@ -312,7 +312,7 @@
         <option value="ZW">Zimbabwe</option>
       </select>
       <p *ngIf="members.invalid && members.touched">
-        <span *ngIf="members.controls.country.errors?.['required']">country can't be empty</span>
+        <span *ngIf="members.controls.country.errors?.['required']">country required</span>
       </p>
     </div>
 
@@ -334,10 +334,9 @@
     <div class="formEntry">
       <label class="myLabel required">Confirm password:  </label>
       <input class="myEntry" type="password" formControlName="passwordcheck">
-      <p *ngIf="members.invalid && members.touched">
-        <span *ngIf="members.controls.passwordcheck.errors?.['required']">Password required</span>
-        <span *ngIf="members.controls.passwordcheck.errors?.['minlength']">Password must be 8 char at least</span>
-    </p>
+      <p *ngIf="members.errors?.['match_error'] && members.touched">
+        <span>Passwords don't match.</span>
+      </p>
     </div>
 
   <div class="formEntry">
@@ -348,7 +347,7 @@
   <div class="formEntry">
     <label class="myLabel required">Choose type of membership:</label>
     <select class="myEntry" id="membership" formControlName="membership">
-      <option>membership types</option>
+      <option></option>
       <option value="AF">membership 1</option>
       <option value="AF">membership 2</option>
       <option value="AF">membership 3</option>
