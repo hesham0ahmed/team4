@@ -35,6 +35,13 @@
     background: linear-gradient(to bottom, #87cefa, #1e90ff);
 }
 
+.modal-body img {
+    width: 80px;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .img-fluid {
     margin-bottom: 15px;
 }

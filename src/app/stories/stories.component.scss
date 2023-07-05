@@ -1,23 +1,19 @@
-/* * {
-    margin: 0;
-    padding: 0;
-}
- */
 .slide {
     margin: 0;
     padding: 0;
 }
 
 .taller-div {
-    height: 485px;
+    height: 200px;
     /* Adjust the height value as needed */
     position: relative;
+    background-color: rgba(128, 128, 128, 0.103);
 
 }
 
 .text {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -25,39 +21,31 @@
     font-size: 60px;
     letter-spacing: 4px;
     z-index: 1;
+    transition: 0.5s ease;
 
     &:hover {
         color: #6096BA;
         text-shadow: 2px 2px 2px black;
         font-size: 100px;
+
     }
 }
 
-.carousel-item {
-    height: 700px;
-}
-
-/* .arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    animation: moveUpDown 2s ease-in-out infinite;
-} */
 
 img {
-    height: 800px;
+    height: 1000px;
 
 }
 
 h2 {
     font-size: 40px;
+    transition: 1s ease;
 
     &:hover {
         color: #6096BA;
         text-shadow: 2px 2px 2px black;
-        animation: rotate 0.7s linear;
+        font-size: 45px;
+        font-weight: bold;
     }
 }
 
@@ -76,7 +64,7 @@ h2 {
 }
 
 p {
-    font-size: 28px;
+    font-size: 20px;
 
     &:hover {
         color: #6096BA;
@@ -89,7 +77,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.421);
     opacity: 0.8;
     margin: 0 auto;
     width: 40%;
@@ -106,4 +94,10 @@ p {
 .alumni-item {
     height: 700px;
     position: relative;
+}
+
+.carousel-caption {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 15px;
 }
