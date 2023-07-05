@@ -20,12 +20,14 @@
                 <div class="card-body">
                   <h5 class="card-title">{{item.title}}</h5>
                   <h5 class="card-title">{{item.date}}</h5>
-                  <a class="btn btn-primary" routerLink="/events/{{id}}">Show Detail</a>
-                  <div *ngIf="(id_detail > -1) && (id == id_detail)">
-                    <p class="card-text" id="current">
+                  <div *ngIf="(id != id_detail)" >
+                    <button class="btn btn-primary" routerLink="/events/{{id}}">Show Detail</button>
+                  </div>
+                  <div *ngIf="(id == id_detail)" id="current">
+                    <button class="btn btn-primary" routerLink="/events">Hide Detail</button>
+                    <p class="card-text" >
                         {{item.description}}
                     </p>
-                    
                   </div>
                 </div>
             </div>
@@ -35,6 +37,7 @@
         </div>
     </div>
 </div>
+
 
 
 

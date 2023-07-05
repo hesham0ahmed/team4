@@ -3,6 +3,7 @@ import { Events } from '../Events';
 import { IEvents } from '../IEvents';
 import {ActivatedRoute, Router} from '@angular/router';
 
+
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
@@ -13,8 +14,11 @@ export class EventsComponent implements OnInit{
   events_arr : IEvents[] = [];
   id_detail : number= -1;
 
+  
 
-  constructor(private route : ActivatedRoute , private router : Router) {}
+  constructor(private route : ActivatedRoute , private router : Router) {
+    
+  }
 
 
   ngOnInit(): void {
@@ -23,6 +27,7 @@ export class EventsComponent implements OnInit{
     this.route.params.subscribe(params => {
 
       this.id_detail = params['idDetail'];
+      
 
     });
   }
