@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Events } from '../Events';
 import { IEvents } from '../IEvents';
 import {ActivatedRoute, Router} from '@angular/router';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -20,14 +21,29 @@ export class EventsComponent implements OnInit{
     
   }
 
-  show(id : number) {
-    if(this.mywindow) {
-      this.mywindow.close();
+  show(item : IEvents) {
+    Swal.fire ({ 
+      
+      imageUrl : `/assets/images/${item.photo}` ,
+      position : 'center' ,
+      html : `<div class="d-flex align-items-center justify-content-center">
+      <div class="card" style="width: 22rem;">
+      <div class="card-body">
+        <h5 class="card-title">${item.title}</h5>
+          <h5 class="card-title">${item.date}</h5>
+          <p class="card-text" >
+              ${item.description}
+          </p>
+      </div>
+      </div>
+      </div>` ,
+      confirmButtonText : 'Close' ,
+      confirmButtonColor : '#3B71CA' ,
+      imageWidth : 'auto' ,
+      imageHeight : 'auto' ,
+
+    })
      }
-     //console.log(URL);
-     this.photo = "/assets/images/"+this.events_arr[id].photo;
-     this.mywindow = window.open(this.photo, "_blank", "resizable=no, titlebar=0, toolbar=no, scrollbars=no, menubar=no, status=no, directories=no, location=no, width=800, height=600, left=300, top=100 " );
-  }
 
   ngOnInit(): void {
 
