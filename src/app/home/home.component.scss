@@ -313,6 +313,7 @@ p {
 // only the Font
 .course {
   font-weight: 400;
+  text-decoration: none;
 }
 
 // LEARN MORE BUTTON
@@ -389,6 +390,7 @@ p {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .button00:hover .circle {
@@ -549,6 +551,14 @@ p {
   opacity: 1;
   transform: translateY(0);
   transition: var(--btn-transition);
+}
+
+.textL {
+  color: black;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .button01-message:hover .lable-message {
