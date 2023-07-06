@@ -1,11 +1,10 @@
 h3 {
-    margin-top: 90px;
-    margin-left: 200px;
+    margin: 50px 0 0 100px;
 }
 
-form {
-    margin-left: 200px;
-    margin-bottom: 50px;
+.myForm {
+    margin:50px 0 50px 100px;
+
 }
 
 .formEntry {
@@ -76,3 +75,61 @@ span {
 }
 
 
+@media (max-width: 650px) {
+    .formEntry {
+    
+        .myInfo {
+            padding-left: 0;
+        }
+
+    }
+    h3 {
+        margin: 50px 0 0 50px;
+    }
+    
+    .myForm {
+        margin:50px 0 50px 50px;
+    
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .formEntry {
+    
+        .myInfo {
+            padding-left: 0;
+        }
+
+    }
+    h3 {
+        margin: 50px 0 0 50px;
+    }
+    
+    .myForm {
+        margin:50px 0 50px 50px;
+    
+    }
+
+}
+
+
+@media (max-width: 960px) {
+    .formEntry {
+    
+        .myInfo {
+            padding-left: 0;
+        }
+
+    }
+    h3 {
+        margin: 50px 0 0 50px;
+    }
+    
+    .myForm {
+        margin:50px 0 50px 50px;
+    
+    }
+
+}

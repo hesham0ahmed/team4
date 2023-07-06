@@ -93,7 +93,8 @@ h4 {
     .class1,
     .class2 {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 100px;
         // background-color: yellow;
     }
 
